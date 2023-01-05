@@ -1,0 +1,361 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
+html,
+body {
+  height: 100%;
+}
+
+* {
+  border: 0px solid blue;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  background-color: white;
+  /*font-family: 'Outfit', sans-serif;*/
+}
+
+h1,
+h2 {
+  font-weight: 300;
+}
+
+.font {
+  font-family: "Ode To Idle Gaming";
+}
+
+.ja {
+  font-size: 3rem;
+}
+
+.lightbox-test {
+  width: 30%;
+  height: 30%;
+}
+
+/*POZADINSKA SLIKA
+.wrap {
+    overflow: hidden;
+    position: relative;
+  }
+
+  .pozadinska {
+    opacity: 0.6;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .demo-content {
+    position: relative;
+  }*/
+.home li a:hover,
+.navigacija ul a:hover,
+.fa-chevron-down:hover,
+.fa-bars:hover,
+.fa-xmark:hover {
+  color: #0fb1a2 !important;
+}
+
+b {
+  font-weight: 500;
+}
+
+.slide {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+/* Home slide */
+.dropdown {
+  font-family: "Outfit", sans-serif;
+  font-size: 1rem;
+}
+.dropdown div a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+}
+.dropdown ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  padding: 14px 16px;
+}
+.dropdown ul li {
+  display: inline-block;
+}
+.dropdown ul li:hover {
+  background: #555;
+}
+.dropdown ul li:hover ul {
+  display: block;
+}
+.dropdown ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+.dropdown ul li ul li {
+  background: #555;
+  display: block;
+  padding: 20px;
+}
+.dropdown ul li ul li a {
+  display: block !important;
+}
+.dropdown ul li ul li:hover {
+  background: #666;
+}
+
+.home {
+  min-height: 100%;
+  background-color: black;
+  background-image: op;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.home a {
+  color: white;
+  text-decoration: none;
+}
+.home .logo {
+  font-family: "Courgette", cursive;
+  font-size: 2rem;
+}
+.home .content {
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+.fa-chevron-down {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.gumb {
+  background-color: #0fb1a2;
+  font-size: 24px;
+  color: black;
+  margin: 5px;
+  padding: 16px;
+  border-radius: 10px;
+  height: 90px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+/* projekti */
+.moji-radovi {
+  min-height: 100%;
+  background-color: black;
+  color: white;
+}
+
+.fa-bars {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.grid-v-space {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+/* Navigacija */
+.home ul {
+  padding: 0;
+  margin: 0;
+}
+.home li {
+  display: inline-block;
+}
+
+.fa-xmark {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.navigacija {
+  z-index: 1;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  width: 100%;
+  transition: 1s ease;
+  position: fixed;
+  background-color: black;
+}
+.navigacija li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.navigacija li {
+  list-style: none;
+  text-align: center;
+  padding: 1rem;
+}
+.navigacija ul {
+  padding: 0;
+  margin: 0;
+}
+.navigacija i {
+  color: white;
+}
+
+/* O meni */
+.o-meni {
+  min-height: 100%;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+/* Kontakt */
+.kontakt {
+  min-height: 100%;
+  background-image: url("img/footer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-weight: 500;
+  font-size: 24px;
+}
+.kontakt input,
+.kontakt textarea {
+  background-color: white;
+  /*border: 1px solid purple;*/
+  padding: 15px;
+  outline: 0;
+  box-shadow: none;
+}
+.kontakt button {
+  background-color: #7f8c8d;
+  padding: 15px;
+  border: 0;
+  width: 50%;
+}
+.kontakt button:hover {
+  background-color: #2ecc71;
+}
+
+.kontaktico i {
+  font-size: 40px;
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.kontaktico a {
+  text-decoration: none;
+  color: white;
+}
+.kontaktico a:hover {
+  color: #0fb1a2;
+}
+.kontaktico a:active {
+  color: white;
+  text-decoration: none;
+}
+
+.box {
+  padding: 2rem;
+  color: white;
+}
+
+.drustvene-mreze a {
+  width: 80px;
+  height: 80px;
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 50px;
+  line-height: 80px;
+  margin-left: 20px;
+  text-align: center;
+  color: white;
+}
+.drustvene-mreze a:hover {
+  color: #c22f39;
+}
+
+.model_viewer {
+  width: 100%;
+  height: 365px;
+  background-color: #fff;
+}
+
+.povratak {
+  font-size: 40px;
+}
+.povratak a {
+  text-decoration: none;
+  color: black;
+}
+.povratak a:hover {
+  transform: rotate(0deg);
+  color: white;
+}
+.povratak a:active {
+  color: white;
+  text-decoration: none;
+}
+
+/* Container needed to position the overlay. Adjust the width as needed */
+.hoverOverlay {
+  position: relative;
+  width: 50%;
+  max-width: 440px;
+}
+
+/* Make the image to responsive */
+.image {
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 16px;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.hoverOverlay:hover .overlay {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 767px) {
+  .hoverOverlay {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+  }
+  .overlay {
+    font-size: 12px;
+    padding: 20px;
+  }
+  .ja {
+    font-size: 2rem;
+  }
+  .gumb {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=index.css.map */
