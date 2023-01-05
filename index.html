@@ -19,17 +19,17 @@
     <div class="slide home d-flex flex-column " id="pocetna">
 
         <div class="container">
-            <div class="row">
+            <div class="row fixed-top" id="navbar">
                 <div class="col d-flex justify-content-between align-items-center font">
-                    <a href="/" class="logo"><img src="img/myicon.png" width="80px"></a>
+                    <a href="/"><img src="img/myicon.png" width="60px"></a>
                     <div class="dropdown">
                         <ul class="d-none d-lg-block">
                             <li class="me-5">
                                 <a href="#projekti">Projekti</a>
                                 <ul>
                                     <li><a href="#graficki">Grafički</a></li>
-                                    <li><a href="#program">Programiranje</a></li>
-                                    <li><a href="#foto">Fotografija</a></li>
+                                    <li><a href="#programiranje">Programiranje</a></li>
+                                    <li><a href="#fotografija">Fotografija</a></li>
                                 </ul>
                             </li>
                             <a class="me-5" href="#omeni">O meni</a>
@@ -41,8 +41,9 @@
                 </div>
             </div>
         </div>
-        <div class="container mt-auto mb-auto ">
-            <!-- wrap demo-content <img class="pozadinska" src="img/mylogo.png"> -->
+        <div class="container mt-auto mb-auto pozadina">
+
+            <!-- <img class="pozadinska" src="img/mylogo.png"> -->
             <div class="row">
                 <div class="col content">
                     <div class="d-flex">
@@ -52,10 +53,10 @@
                         <div class="p-2 flex-fill "></div>
                     </div>
                     <div class="d-flex">
-                        <a href="#program">
+                        <a href="#programiranje">
                             <div class="flex-grow-1 gumb"><b>PROGRAMIRANJE</b></div>
                         </a>
-                        <a href="#foto">
+                        <a href="#fotografija">
                             <div class="p-2 flex-fill gumb"><b>FOTOGRAFIJA</b></div>
                         </a>
                         <div class="p-2 flex-fill"></div>
@@ -63,8 +64,8 @@
                 </div>
                 <div class="col ja">
 
-                    <b>Ja sam Nela</b>
-                    <p><b>FRONTEND DEVELOPER</b></p>
+                    <h1>Ja sam Nela<br>
+                        FRONTEND DEVELOPER</h1>
 
                 </div>
             </div>
@@ -75,13 +76,13 @@
     <!-- Slide moji-radovi (Projekti) -->
     <div class="slide moji-radovi d-flex flex-column" id="projekti">
         <div class="container">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col d-flex justify-content-end align-items-center">
 
                     <i class="fa-solid fa-bars"></i>
 
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="container mt-auto mb-auto">
             <div class="row">
@@ -89,8 +90,10 @@
 
                     <br>
                     <div class="row mt-4">
-                        <h2 id="graficki">Grafički dizajn i 3D modeliranje</h2>
-
+                        <div id="graficki">
+                            <br><br><br><br>
+                            <h2>Grafički dizajn i 3D modeliranje</h2>
+                        </div>
                         <div class="col-md-6 col-lg-4 grid-v-space">
                             <a href="img/image.jpg" data-lightbox="projekti" class="lightbox-test"><img
                                     src="img/thumb.jpg" alt="" loading="lazy" class="img-fluid"></a>
@@ -104,10 +107,13 @@
                                     loading="lazy" class="img-fluid"></a>
                         </div>
 
-                    </div>
 
+                    </div>
                     <div class="row mt-4">
-                        <h2 id="program">Programiranje</h2>
+
+                        <div id="programiranje"><br><br><br><br>
+                            <h2>Programiranje</h2>
+                        </div>
                         <div class="grid-v-space">
                             <a href="img/image.jpg" data-lightbox="projekti"><img src="img/port1.png" alt=""
                                     loading="lazy" class="img-fluid"></a>
@@ -117,7 +123,10 @@
                     </div>
 
                     <div class="row mt-4">
-                        <h2 id="foto">Fotografija</h2>
+                        <div id="fotografija">
+                            <br><br><br><br>
+                            <h2>Fotografija</h2>
+                        </div>
                         <div class="col-md-12  grid-v-space hoverOverlay">
 
                             <img src="/img/foto1.jpg" width="100%" height="100%">
@@ -192,7 +201,7 @@
     </div>
 
     <!-- Hamburger Navigacija -->
-    <div class="slide navigacija d-flex flex-column">
+    <div class="slide hamburgerNav d-flex flex-column">
         <div class="container">
             <div class="row">
                 <div class="col d-flex justify-content-end align-items-center">
@@ -207,7 +216,7 @@
                 <div class="col content font">
 
                     <ul>
-                        <li><a href="#pocetna">Početna</a></li>
+                        <li><a href="#pocetna"><i class="fa-solid fa-house"></i></a></li>
                         <li><a href="#projekti">Projekti</a></li>
                         <li><a href="#omeni">O meni</a></li>
                         <li><a href="#kontakt">Kontakt</a></li>
@@ -221,13 +230,13 @@
     <!-- Slide O meni -->
     <div class="slide o-meni d-flex flex-column" id="omeni">
         <div class="container">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col d-flex justify-content-end align-items-center">
 
                     <i class="fa-solid fa-bars"></i>
 
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="container mt-auto mb-auto">
             <div class="row">
@@ -262,7 +271,7 @@
                             <br><br>
 
                         </div>
-                        <div class="col d-none d-lg-block">
+                        <div class="col col-lg-6 col-sm-12 col-12">
                             <img src="../img/ja1.png" width="80%">
                         </div>
                     </div>
@@ -352,17 +361,31 @@
     <script>
         $('.fa-bars').click(
             function () {
-                $('.navigacija').css('left', '0');
+                $('.hamburgerNav').css('left', '0');
+                $('#navbar').hide();
             }
         );
 
-        $('.fa-xmark, .navigacija ul a').click(
+        $('.fa-xmark, .hamburgerNav ul a').click(
             function () {
-                $('.navigacija').css('left', '-100%');
+                $('.hamburgerNav').css('left', '-100%');
+                $('#navbar').show();
             }
-        );        
-    </script>
+        );
 
+    </script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+        window.onscroll = function () {
+            var currentScrollPos = window.pageYOffset;
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-60px";
+            }
+            prevScrollpos = currentScrollPos;
+        }
+    </script>
     <!-- ScrollReveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>

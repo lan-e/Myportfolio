@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 html,
 body {
+  background-color: black;
   height: 100%;
 }
 
@@ -15,42 +16,24 @@ body {
   /*font-family: 'Outfit', sans-serif;*/
 }
 
-h1,
 h2 {
   font-weight: 300;
 }
 
+b {
+  font-weight: 500;
+}
+
 .font {
-  font-family: "Ode To Idle Gaming";
+  font-family: "Outfit", sans-serif;
 }
 
-.ja {
-  font-size: 3rem;
+.pozadina {
+  background-image: url("img/footer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-.lightbox-test {
-  width: 30%;
-  height: 30%;
-}
-
-/*POZADINSKA SLIKA
-.wrap {
-    overflow: hidden;
-    position: relative;
-  }
-
-  .pozadinska {
-    opacity: 0.6;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-  }
-
-  .demo-content {
-    position: relative;
-  }*/
 .home li a:hover,
 .navigacija ul a:hover,
 .fa-chevron-down:hover,
@@ -59,23 +42,8 @@ h2 {
   color: #0fb1a2 !important;
 }
 
-b {
-  font-weight: 500;
-}
-
-.slide {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 /* Home slide */
 .dropdown {
-  font-family: "Outfit", sans-serif;
-  font-size: 1rem;
-}
-.dropdown div a {
-  text-decoration: none;
-  color: white;
   display: inline-block;
 }
 .dropdown ul {
@@ -96,7 +64,7 @@ b {
 }
 .dropdown ul li ul {
   position: absolute;
-  width: 200px;
+  width: 150px;
   display: none;
 }
 .dropdown ul li ul li {
@@ -104,11 +72,28 @@ b {
   display: block;
   padding: 20px;
 }
-.dropdown ul li ul li a {
-  display: block !important;
-}
 .dropdown ul li ul li:hover {
-  background: #666;
+  background: #555;
+}
+
+#navbar {
+  background: #333;
+  padding-left: 50px;
+  padding-right: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.2s;
+  margin: 0;
+  display: block;
+}
+#navbar a {
+  display: block;
+  float: left !important;
+}
+
+.ja {
+  font-size: 3rem;
 }
 
 .home {
@@ -122,10 +107,6 @@ b {
 .home a {
   color: white;
   text-decoration: none;
-}
-.home .logo {
-  font-family: "Courgette", cursive;
-  font-size: 2rem;
 }
 .home .content {
   font-weight: 300;
@@ -141,13 +122,12 @@ b {
   background-color: #0fb1a2;
   font-size: 24px;
   color: black;
-  margin: 5px;
-  padding: 16px;
+  margin: 10px;
   border-radius: 10px;
   height: 90px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
 }
 
 /* projekti */
@@ -181,31 +161,34 @@ b {
   cursor: pointer;
 }
 
-.navigacija {
+.hamburgerNav {
   z-index: 1;
   top: 0;
   left: -100%;
   bottom: 0;
   width: 100%;
-  transition: 1s ease;
+  transition: 0.5s ease;
   position: fixed;
   background-color: black;
 }
-.navigacija li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-.navigacija li {
+.hamburgerNav li {
   list-style: none;
   text-align: center;
   padding: 1rem;
 }
-.navigacija ul {
+.hamburgerNav li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+.hamburgerNav li a:hover {
+  color: #0fb1a2;
+}
+.hamburgerNav ul {
   padding: 0;
   margin: 0;
 }
-.navigacija i {
+.hamburgerNav i {
   color: white;
 }
 
@@ -248,7 +231,7 @@ b {
 .kontaktico i {
   font-size: 40px;
   padding-top: 30px;
-  padding-left: 30px;
+  padding-right: 20px;
 }
 .kontaktico a {
   text-decoration: none;

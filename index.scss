@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap");
 html,
 body {
+  background-color: black;
   height: 100%;
 }
 * {
@@ -14,40 +15,23 @@ body {
   /*font-family: 'Outfit', sans-serif;*/
 }
 
-h1,
 h2 {
   font-weight: 300;
 }
+b {
+  font-weight: 500;
+}
+
 .font {
-  font-family: "Ode To Idle Gaming";
+  font-family: "Outfit", sans-serif;
 }
 
-.ja {
-  font-size: 3rem;
+//POZADINSKA SLIKA
+.pozadina {
+  background-image: url("img/footer.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
-.lightbox-test {
-  width: 30%;
-  height: 30%;
-}
-/*POZADINSKA SLIKA
-.wrap {
-    overflow: hidden;
-    position: relative;
-  }
-  
-  .pozadinska {
-    opacity: 0.6;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-  }
-  
-  .demo-content {
-    position: relative;
-  }*/
 
 .home li a:hover,
 .navigacija ul a:hover,
@@ -57,24 +41,18 @@ h2 {
   color: #0fb1a2 !important;
 }
 
-b {
-  font-weight: 500;
-}
-
-.slide {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
+// .slide {
+//   padding-top: 2rem;
+//   padding-bottom: 2rem;
+// }
 
 /* Home slide */
 .dropdown {
-  font-family: "Outfit", sans-serif;
-  font-size: 1rem;
-  div a {
-    text-decoration: none;
-    color: white;
-    display: inline-block;
-  }
+  // div a {
+  //   text-decoration: none;
+  //   color: white;
+  display: inline-block;
+  // }
   ul {
     display: inline;
     margin: 0;
@@ -92,23 +70,42 @@ b {
       }
       ul {
         position: absolute;
-        width: 200px;
+        width: 150px;
         display: none;
 
         li {
           background: #555;
           display: block;
           padding: 20px;
-          a {
-            display: block !important;
-          }
+          // a {
+          //   display: block !important;
+          // }
           &:hover {
-            background: #666;
+            background: #555;
           }
         }
       }
     }
   }
+}
+#navbar {
+  background: #333;
+  padding-left: 50px;
+  padding-right: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  transition: top 0.2s;
+  margin: 0;
+  display: block;
+  a {
+    display: block;
+    float: left !important;
+  }
+}
+
+.ja {
+  font-size: 3rem;
 }
 .home {
   min-height: 100%;
@@ -121,10 +118,7 @@ b {
     color: white;
     text-decoration: none;
   }
-  .logo {
-    font-family: "Courgette", cursive;
-    font-size: 2rem;
-  }
+
   .content {
     font-weight: 300;
     font-size: 2rem;
@@ -139,14 +133,12 @@ b {
   background-color: #0fb1a2;
   font-size: 24px;
   color: black;
-  margin: 5px;
-  padding: 16px;
+  margin: 10px;
   border-radius: 10px;
   height: 90px;
-
+  display: flex;
   justify-content: center;
   align-items: center;
-  display: flex;
 }
 
 /* projekti */
@@ -184,25 +176,28 @@ b {
   cursor: pointer;
 }
 
-.navigacija {
+.hamburgerNav {
   z-index: 1;
   top: 0;
   left: -100%;
   bottom: 0;
   width: 100%;
-  transition: 1s ease;
+  transition: 0.5s ease;
   position: fixed;
   background-color: black;
 
-  li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.5rem;
-  }
   li {
     list-style: none;
     text-align: center;
     padding: 1rem;
+    a {
+      color: white;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+    a:hover {
+      color: #0fb1a2;
+    }
   }
   ul {
     padding: 0;
@@ -252,7 +247,7 @@ b {
   i {
     font-size: 40px;
     padding-top: 30px;
-    padding-left: 30px;
+    padding-right: 20px;
   }
   a {
     text-decoration: none;
