@@ -41,10 +41,10 @@ b {
   color: #0fb1a2 !important;
 }
 
-// .slide {
-//   padding-top: 2rem;
-//   padding-bottom: 2rem;
-// }
+.slide {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
 
 /* Home slide */
 .dropdown {
@@ -89,7 +89,8 @@ b {
   }
 }
 #navbar {
-  background: #333;
+  background-color: #333;
+
   padding-left: 50px;
   padding-right: 50px;
   position: fixed;
@@ -118,11 +119,6 @@ b {
     color: white;
     text-decoration: none;
   }
-
-  .content {
-    font-weight: 300;
-    font-size: 2rem;
-  }
 }
 .fa-chevron-down {
   font-size: 2rem;
@@ -150,7 +146,7 @@ b {
 }
 
 .fa-bars {
-  font-size: 2rem;
+  font-size: 32px;
   cursor: pointer;
 }
 
@@ -172,8 +168,9 @@ b {
 }
 
 .fa-xmark {
-  font-size: 2rem;
+  font-size: 36px;
   cursor: pointer;
+  padding: 15px 45px 10px 10px;
 }
 
 .hamburgerNav {
@@ -246,8 +243,6 @@ b {
 .kontaktico {
   i {
     font-size: 40px;
-    padding-top: 30px;
-    padding-right: 20px;
   }
   a {
     text-decoration: none;
@@ -262,23 +257,10 @@ b {
     text-decoration: none;
   }
 }
-.box {
-  //   background-color: rgba(255, 255, 255, 0.5);
-  //   border-radius: 1rem;
-  padding: 2rem;
-  color: white;
-}
 .drustvene-mreze {
   a {
-    width: 80px;
-    height: 80px;
-    //background-color: white;
-    display: inline-block;
-    border-radius: 50%;
     font-size: 50px;
-    line-height: 80px;
     //transition: 0.5s ease-in-out;
-    margin-left: 20px;
     text-align: center;
     color: white;
   }
@@ -298,7 +280,7 @@ b {
   font-size: 40px;
   a {
     text-decoration: none;
-    color: black;
+    color: white;
   }
   a:hover {
     transform: rotate(0deg);
@@ -310,22 +292,20 @@ b {
   }
 }
 
-//HOVER (onmouseenter)
-/* Container needed to position the overlay. Adjust the width as needed */
+//HOVER
+
 .hoverOverlay {
   position: relative;
   width: 50%;
   max-width: 440px;
 }
 
-/* Make the image to responsive */
 .image {
   //display: block;
   width: 100%;
   height: auto;
 }
 
-/* The overlay effect - lays on top of the container and over the image */
 .overlay {
   position: absolute;
   bottom: 0;
@@ -345,7 +325,6 @@ b {
   align-items: center;
 }
 
-/* When you mouse over the container, fade in the overlay title */
 .hoverOverlay:hover .overlay {
   opacity: 1;
 }
@@ -365,5 +344,35 @@ b {
   }
   .gumb {
     font-size: 1rem;
+  }
+  .kontaktico {
+    i {
+      font-size: 24px;
+    }
+  }
+  .drustvene-mreze {
+    i {
+      font-size: 24px;
+    }
+  }
+}
+
+//KONTAKT
+.grid-container1 {
+  color: white;
+  display: grid;
+  grid-template-columns: 70px 400px;
+  grid-template-rows: repeat(3, 75px);
+  align-items: center;
+}
+.grid-container2 {
+  color: white;
+  display: grid;
+  grid-template-columns: 680px;
+  grid-template-rows: 120px 130px;
+  align-items: center;
+  padding-left: 60px;
+  i {
+    padding-left: 40px;
   }
 }
