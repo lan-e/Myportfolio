@@ -16,11 +16,11 @@
 
 <body>
     <!-- Slide Home -->
-    <div class="slide home d-flex flex-column pozadina">
+    <div class="slide home d-flex flex-column pozadina" id="pocetna">
         <div class="container">
             <div class="row fixed-top" id="navbar">
                 <div class="col d-flex justify-content-between align-items-center font">
-                    <a href="/"><img src="img/myicon.png" width="60px" /></a>
+                    <a href="#pocetna"><img src="img/myicon.png" width="60px" /></a>
                     <div class="dropdown">
                         <ul class="d-none d-lg-block">
                             <li class="me-5">
@@ -47,16 +47,16 @@
             <div class="row">
                 <div class="col">
                     <div class="d-flex">
-                        <a href="#graficki">
-                            <div class="p-2 flex-grow-1 gumb">
-                                <b>GRAFIČKI DIZAJN I 3D MODELIRANJE</b>
-                            </div>
+                        <a href="#programiranje">
+                            <div class="p-2 gumb"><b>PROGRAMIRANJE I WEB DIZAJN</b></div>
                         </a>
                     </div>
-                    <div class="d-flex">
-                        <a href="#programiranje">
-                            <div class="p-2 gumb"><b>PROGRAMIRANJE</b></div>
+                    <div class="d-flex"><a href="#graficki">
+                            <div class="p-2 flex-grow-1 gumb">
+                                <b>GRAFIČKI DIZAJN</b>
+                            </div>
                         </a>
+
                         <a href="#fotografija">
                             <div class="p-2 gumb"><b>FOTOGRAFIJA</b></div>
                         </a>
@@ -86,35 +86,147 @@
         <div class="container mt-auto mb-auto">
             <div class="row">
                 <div class="col content">
-                    <br />
-                    <div class="row mt-4">
-                        <div id="graficki">
-                            <br /><br /><br /><br />
-                            <h2>Grafički dizajn i 3D modeliranje</h2>
-                        </div>
-                        <div class="col-md-6 col-lg-4 grid-v-space">
-                            <a href="img/image.jpg" data-lightbox="projekti" class="lightbox-test"><img
-                                    src="img/thumb.jpg" alt="" loading="lazy" class="img-fluid" /></a>
-                        </div>
-                        <div class="col-md-6 col-lg-4 grid-v-space">
-                            <a href="img/image.jpg" data-lightbox="projekti"><img src="img/thumb.jpg" alt=""
-                                    loading="lazy" class="img-fluid" /></a>
-                        </div>
-                        <div class="col-md-6 col-lg-4 grid-v-space">
-                            <a href="img/image.jpg" data-lightbox="projekti"><img src="img/thumb.jpg" alt=""
-                                    loading="lazy" class="img-fluid" /></a>
-                        </div>
-                    </div>
                     <div class="row mt-4">
                         <div id="programiranje">
                             <br /><br /><br /><br />
                             <h2>Programiranje</h2>
                         </div>
-                        <div class="grid-v-space">
-                            <a href="img/image.jpg" data-lightbox="projekti"><img src="img/port1.png" alt=""
-                                    loading="lazy" class="img-fluid" /></a>
+                        <div class="col-lg-6 grid-v-space grafOverlay">
+                            <img src="img/sopgweb.jpg" alt="" />
+                            <a href="https://sopgbakale.netlify.app/" target="_blank">
+                                <div class="overlay">
+                                    <h5>Web trgovina</h5>
+
+                                    Izrada web trgovine za SOPG Bakale iz Karlovca.
+                                    Korišten React.js, Next.js , Stripe, Sanity, Netlify.
+
+                                    <b>2022.</b>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-6 grid-v-space grafOverlay">
+                            <img src="img/portfolio.jpg" alt="" />
+                            <a href="https://lan-e.netlify.app/" target="_blank">
+                                <div class="overlay">
+                                    <h5>Stari portfolio</h5>
+
+                                    Portfolio izrađen za vlastite potrebe.
+                                    Korišten React.js, Netlify.
+
+                                    <b>2022.</b>
+                                </div>
+                            </a>
+                        </div>
+                        <p>
+                        <h2>Web dizajn</h2>
+                        </p>
+                        <div class="col-lg-6 grid-v-space grafOverlay">
+                            <img src="img/dontwaste.jpg" alt="" />
+                            <a href="https://www.figma.com/proto/H15igXIS6OTLH5uDNd5QLd/don't-waste.-donate.?node-id=43%3A70&scaling=min-zoom&page-id=1%3A3&starting-point-node-id=43%3A70"
+                                target="_blank">
+                                <div class="overlay">
+                                    <h5>Web stranica - Figma</h5>
+
+                                    Izrada dizajna i prototypea u Figmi za izmišljenu
+                                    organizaciju koja se bavi rješavanjem viška hrane.
+
+                                    <b>2022.</b>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="col-lg-6 grid-v-space grafOverlay">
+                            <img src="img/portfoliodizajn.jpg" alt="" />
+                            <a href="https://www.figma.com/proto/3OIM3RH11zl6XAF9KU3PqZ/My-portfolio?node-id=103%3A28&scaling=min-zoom&page-id=103%3A27&starting-point-node-id=103%3A28"
+                                target="_blank">
+                                <div class="overlay">
+                                    <h5>Vlastiti portfolio - Figma</h5>
+
+                                    Izrada dizajna i prototypea u Figmi za trenutni portfolio.
+
+                                    <b>2022.</b>
+                                </div>
+                            </a>
                         </div>
                     </div>
+                    <div class="row mt-4">
+                        <div id="graficki">
+                            <br /><br /><br /><br />
+                            <h2>Grafički dizajn</h2>
+                        </div>
+                        <div class="col-md-6 col-lg-4 grid-v-space grafOverlay">
+                            <img src="img/jazz.jpg" alt="" loading="lazy" class="img-fluid" />
+
+                            <div class="overlay">
+                                <h5>Festival jazz glazbe Varaždin</h5>
+
+                                Izrada plakata za izmišljeni festival
+                                jazz glazbe u Varaždinu.
+
+                                <b>2021.</b>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 col-lg-4 grid-v-space grafOverlay">
+                            <img src="img/sopg.jpg" alt="" loading="lazy" class="img-fluid" />
+
+                            <div class="overlay">
+                                <h5>SOPG Bakale</h5>
+
+                                Logo za SOPG Bakale iz Karlovca.
+                                Bave se uzgojem istarskog i rimskog
+                                lješnjaka i izradom meda.
+
+                                <b>2021.</b>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 col-lg-4 grid-v-space grafOverlay">
+                            <img src="img/page1.jpg" alt="" loading="lazy" class="img-fluid" />
+                            <a href="img/page2.jpg" data-lightbox="projekti">
+                                <div class="overlay">
+                                    <h5>Vinicunca (Planina 7 boja)</h5>
+
+                                    Brošura za izmišljeno organizirano
+                                    planinarenje na planinu Vinicuncu.
+                                    Otvorena brošura - oblik broja 7.
+                                    Rastvorena - oblik trokuta koji se
+                                    postavi kao planina.
+
+                                    <b>2021.</b>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4 grid-v-space grafOverlay">
+                            <img src="img/foxy.jpg" alt="" loading="lazy" />
+                            <a href="img/fox_bon.jpg" data-lightbox="projekti">
+                                <div class="overlay">
+                                    <h5>EMI.FOX beauty</h5>
+
+                                    Logo, cjenik i poklon bon za makeup studio.
+                                    <b>2023.</b>
+
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-lg-4 grid-v-space grafOverlay">
+                            <img src="img/logoND.jpg" alt="" loading="lazy" />
+
+                            <div class="overlay">
+                                <h5>Vlastiti logo</h5>
+
+                                Izrada logotipa od
+                                vlastitih inicijala u svrhu uporabe za
+                                vlastite potrebe - za portfolio.
+
+                                <b>2022.</b>
+
+                            </div>
+
+                        </div>
+                    </div>
+
 
                     <div class="row mt-4">
                         <div id="fotografija">
@@ -126,8 +238,8 @@
                             <div class="overlay">
                                 <br />
                                 <h5>Paranoid Android</h5>
-                                Ciklus života. Stup dijeli djetinjstvo i odraslu dob. Ljudi na
-                                mobitelu su okrenuti prema kameri, dok su baka i dijete
+                                Ciklus života. Stup dijeli djetinjstvo i odraslu dob. Ljudi na mobitelu su okrenuti
+                                prema kameri, dok su baka i dijete
                                 anonimni - ne nalaze se na društvenim mrežama. Zagreb nakon
                                 potresa. Baka i zgrade na "štakama".
                                 <b>2022.</b>
@@ -139,8 +251,7 @@
                                 <h5>Look at how the time goes past</h5>
 
                                 Dijete i djed gledaju u različitim smjerovima što označava
-                                njihove puteve. No ipak imaju nešto zajedničko - vole
-                                sladoled.
+                                njihove puteve. No ipak imaju nešto zajedničko - sladoled.
 
                                 <b>2022.</b>
                             </div>
@@ -258,7 +369,7 @@
                             <br /><br />
                         </div>
                         <div class="col col-lg-6 col-sm-12 col-12">
-                            <img src="../img/ja1.png" width="80%" style="display: block; margin: auto" />
+                            <img src="/img/janormal.jpg" width="80%" style="display: block; margin: auto" />
                         </div>
                     </div>
                 </div>
@@ -267,7 +378,7 @@
     </div>
 
     <!-- Slide Kontakt -->
-    <div class="slide kontakt d-flex flex-column" id="kontakt">
+    <div class="slide  kontakt  d-flex flex-column" id="kontakt">
         <!-- <div class="container">
             <div class="row">
                 <div class="col d-flex justify-content-end align-items-center">
@@ -277,7 +388,7 @@
                 </div>
             </div>
         </div> -->
-        <div class="container mt-auto mb-auto">
+        <div class="container mb-auto ">
             <div class="row">
                 <div class="col content">
                     <div class="row">
@@ -307,8 +418,9 @@
                             <div class="row grid-item grid-text">
                                 <div class="col">
                                     O MENI<br />
-                                    Studentica sam Sveučilišta Sjever. Osim programiranja zanima
-                                    me fotografija, 3D modeliranje i izrada videoigara.
+                                    Studentica sam Sveučilišta Sjever. Smatram da imam smisla za dizajn i
+                                    kompoziciju. Zanima me frontend developing:
+                                    HTML, CSS, SCSS, JS, SQL, React.js, Git, Figma.
                                 </div>
                             </div>
                             <div class="row drustvene-mreze mt-3 grid-item">
@@ -332,7 +444,7 @@
         <div class="container">
             <div class="row">
                 <div class="col d-flex justify-content-end align-items-center povratak">
-                    <a href="/"><i class="fa-solid fa-arrow-up"></i></a>
+                    <a href="#pocetna"><i class="fa-solid fa-arrow-up"></i></a>
                 </div>
             </div>
         </div>

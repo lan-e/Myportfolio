@@ -16,7 +16,7 @@ window.onscroll = function () {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-60px";
+    document.getElementById("navbar").style.top = "-70px";
   }
   prevScrollpos = currentScrollPos;
 };
@@ -25,7 +25,7 @@ window.onscroll = function () {
 
 const sr = ScrollReveal({
   distance: "200px",
-  duration: 2500,
+  duration: 1000,
   reset: true,
 });
 
@@ -33,3 +33,14 @@ sr.reveal(".sr-top", { origin: "top" });
 sr.reveal(".sr-right", { origin: "right" });
 sr.reveal(".sr-bottom", { origin: "bottom" });
 sr.reveal(".sr-left", { origin: "left" });
+
+var arrowLeft = $("#arrowLeft");
+var arrowRight = $("#arrowRight");
+$(document).ready(function () {
+  arrowLeft.click(function () {
+    prevImg();
+  });
+  arrowRight.click(function () {
+    nextImg();
+  });
+});

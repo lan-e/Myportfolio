@@ -29,7 +29,7 @@ b {
 }
 
 .pozadina {
-  background-image: url("img/footer.png");
+  background-image: url("img/banner.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -132,8 +132,23 @@ b {
 }
 
 /* projekti */
+.grafOverlay {
+  border: 1px solid white;
+  position: relative;
+}
+.grafOverlay img {
+  display: block;
+  width: 100%;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.grafOverlay:hover .overlay {
+  opacity: 1;
+}
+
 .moji-radovi {
-  min-height: 100%;
   background-color: black;
   color: white;
 }
@@ -205,10 +220,11 @@ b {
 
 /* Kontakt */
 .kontakt {
-  min-height: 100%;
-  background-image: url("img/footer.png");
+  background-image: url("img/banner.png");
   background-size: cover;
   background-repeat: no-repeat;
+  min-height: 100%;
+  color: #999 !important;
   font-weight: 500;
   font-size: 24px;
 }
@@ -339,15 +355,18 @@ b {
   grid-template-columns: 70px 400px;
   grid-template-rows: repeat(3, 75px);
   align-items: center;
+  padding-left: 60px;
+  padding-top: 650px;
 }
 
 .grid-container2 {
   color: white;
   display: grid;
-  grid-template-columns: 680px;
+  grid-template-columns: 650px;
   grid-template-rows: 120px 130px;
   align-items: center;
-  padding-left: 60px;
+  padding-left: 80px;
+  padding-top: 250px;
 }
 .grid-container2 i {
   padding-left: 40px;
