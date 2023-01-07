@@ -16,7 +16,7 @@ window.onscroll = function () {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-70px";
+    document.getElementById("navbar").style.top = "-90px";
   }
   prevScrollpos = currentScrollPos;
 };
@@ -25,7 +25,7 @@ window.onscroll = function () {
 
 const sr = ScrollReveal({
   distance: "200px",
-  duration: 1000,
+  duration: 800,
   reset: true,
 });
 

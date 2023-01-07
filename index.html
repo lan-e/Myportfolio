@@ -10,7 +10,6 @@
         rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
     <link rel="stylesheet" href="alati/lightbox/css/lightbox.min.css" />
-    <link rel="stylesheet" href="alati/vegas/vegas.min.css" />
     <link rel="stylesheet" href="index.css" />
 </head>
 
@@ -21,55 +20,60 @@
             <div class="row fixed-top" id="navbar">
                 <div class="col d-flex justify-content-between align-items-center font">
                     <a href="#pocetna"><img src="img/myicon.png" width="60px" /></a>
-                    <div class="dropdown">
-                        <ul class="d-none d-lg-block">
-                            <li class="me-5">
-                                <a href="#projekti">Projekti</a>
-                                <ul>
-                                    <li><a href="#graficki">Grafički</a></li>
-                                    <li><a href="#programiranje">Programiranje</a></li>
-                                    <li><a href="#fotografija">Fotografija</a></li>
-                                </ul>
-                            </li>
-                            <a class="me-5" href="#omeni">O meni</a>
-                            <a class="me-5" href="#kontakt">Kontakt</a>
-                        </ul>
 
-                        <i class="fa-solid fa-bars d-lg-none"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container mt-auto mb-auto">
-            <!-- //margintop, marginbottom -->
+                    <div class="d-none d-lg-block">
 
-            <!-- <img class="pozadinska" src="img/mylogo.png"> -->
-            <div class="row">
-                <div class="col">
-                    <div class="d-flex">
-                        <a href="#programiranje">
-                            <div class="p-2 gumb"><b>PROGRAMIRANJE I WEB DIZAJN</b></div>
-                        </a>
-                    </div>
-                    <div class="d-flex"><a href="#graficki">
-                            <div class="p-2 flex-grow-1 gumb">
-                                <b>GRAFIČKI DIZAJN</b>
+                        <div class="dropdown">
+
+                            <a href="#projekti" class="dropbtn">Projekti<i class="fa fa-caret-down"></i></a>
+                            <div class="dropdown-content">
+                                <a href="#programiranje">Programiranje</a>
+                                <a href="#graficki">Grafički</a>
+                                <a href="#fotografija">Fotografija</a>
                             </div>
-                        </a>
 
-                        <a href="#fotografija">
-                            <div class="p-2 gumb"><b>FOTOGRAFIJA</b></div>
-                        </a>
+
+                        </div>
+                        <a class="me-5" href="#omeni">O meni</a>
+                        <a class="me-5" href="#kontakt">Kontakt</a>
                     </div>
+
+                    <i class="fa-solid fa-bars d-lg-none"></i>
                 </div>
-                <div class="col ja">
-                    <h1>
-                        Ja sam Nela<br />
-                        FRONTEND DEVELOPER
-                    </h1>
-                </div>
+
             </div>
         </div>
+    </div>
+    <div class="container mt-auto mb-auto">
+        <!-- //margintop, marginbottom -->
+
+        <!-- <img class="pozadinska" src="img/mylogo.png"> -->
+        <div class="row">
+            <div class="col">
+                <div class="d-flex">
+                    <a href="#programiranje">
+                        <div class="p-2 gumb"><b>PROGRAMIRANJE I WEB DIZAJN</b></div>
+                    </a>
+                </div>
+                <div class="d-flex"><a href="#graficki">
+                        <div class="p-2 flex-grow-1 gumb">
+                            <b>GRAFIČKI DIZAJN</b>
+                        </div>
+                    </a>
+
+                    <a href="#fotografija">
+                        <div class="p-2 gumb"><b>FOTOGRAFIJA</b></div>
+                    </a>
+                </div>
+            </div>
+            <div class="col ja sr-top">
+                <h1>
+                    Ja sam Nela<br />
+                    FRONTEND DEVELOPER
+                </h1>
+            </div>
+        </div>
+    </div>
     </div>
 
     <!-- Slide moji-radovi (Projekti) -->
@@ -210,6 +214,7 @@
                                 </div>
                             </a>
                         </div>
+
                         <div class="col-md-6 col-lg-4 grid-v-space grafOverlay">
                             <img src="img/logoND.jpg" alt="" loading="lazy" />
 
@@ -221,6 +226,22 @@
                                 vlastite potrebe - za portfolio.
 
                                 <b>2022.</b>
+
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 col-lg-4 grid-v-space grafOverlay">
+                            <img src="img/plakat.png" alt="" loading="lazy" />
+
+                            <div class="overlay">
+                                <h5>PEEK&POKE</h5>
+
+                                Izrada plakata za izmišljeni
+                                sajam starih videoigara i tehnologije.
+                                Ideja je suradnja s muzejom
+                                Peek&Poke iz Rijeke.
+
+                                <b>2021.</b>
 
                             </div>
 
@@ -256,7 +277,7 @@
                                 <b>2022.</b>
                             </div>
                         </div>
-                        <div class="col-md-12grid-v-space hoverOverlay">
+                        <div class="col-md-12 grid-v-space hoverOverlay">
                             <img src="/img/foto3.jpg" width="100%" height="100%" style="display: block; margin: auto" />
                             <div class="overlay">
                                 <h5>Djedova ostavština</h5>
@@ -348,13 +369,14 @@
                             prodana već drugi dan. Iz izložbe voća bile su odabrane pojedine
                             fotografije i postavljene u Novinarski dom u Zagrebu povodom
                             Nestle panela „Zdravija djeca u zdravijoj Hrvatskoj“. No ipak,
-                            zainteresiralo me 3D modeliranje i frontend programiranje u
+                            zainteresiralo me frontend programiranje u
                             kojem vidim budućnost.
                             <br /><br />
                             Smatram da imam smisla za dizajn i kompoziciju, a na fakultetu
                             sam naučila puno o boji i tisku. Zanima me frontend developing -
-                            HTML, CSS, SCSS, JS, SQL, React.js, Git, Figma. U posljednjem
-                            projektu koristila sam Sanity, Stripe i Netlify.
+                            HTML, CSS, SCSS, JS, React.js, Git, Figma. Kod izrade webshopa koristila sam Sanity, Stripe
+                            i
+                            Netlify.
                             <br /><br />
                             Imam iskustva u Adobe programima - InDesign, Illustrator,
                             Photoshop, Lightroom i ostalim programima - Blender, DaVinci
@@ -378,7 +400,7 @@
     </div>
 
     <!-- Slide Kontakt -->
-    <div class="slide  kontakt  d-flex flex-column" id="kontakt">
+    <div class="slide  kontakt  d-flex flex-column">
         <!-- <div class="container">
             <div class="row">
                 <div class="col d-flex justify-content-end align-items-center">
@@ -388,12 +410,12 @@
                 </div>
             </div>
         </div> -->
-        <div class="container mb-auto ">
+        <div class="container mb-auto " id="kontakt">
             <div class="row">
                 <div class="col content">
                     <div class="row">
                         <!--<h1 class="mb-4">Kontakt</h1>-->
-                        <div class="col-lg-6 kontaktico grid-container1">
+                        <div class="col-lg-6 kontaktico grid-container1 sr-left">
                             <div class="grid-item">
                                 <a href="tel:097/723-8354">
                                     <i class="fa-solid fa-phone"></i></a>
@@ -416,7 +438,7 @@
                         </div>
                         <div class="col-lg-6 mt-4 mt-lg-0 grid-container2">
                             <div class="row grid-item grid-text">
-                                <div class="col">
+                                <div class="col sr-right">
                                     O MENI<br />
                                     Studentica sam Sveučilišta Sjever. Smatram da imam smisla za dizajn i
                                     kompoziciju. Zanima me frontend developing:
