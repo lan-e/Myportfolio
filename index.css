@@ -16,6 +16,13 @@ body {
   /*font-family: 'Outfit', sans-serif;*/
 }
 
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+
 h1,
 h2 {
   font-weight: 300;
@@ -54,7 +61,6 @@ b {
 }
 #navbar a {
   color: white;
-  text-decoration: none;
 }
 
 .dropbtn {
@@ -84,7 +90,6 @@ b {
 .dropdown-content a {
   color: black;
   padding: 12px 16px;
-  text-decoration: none;
   display: block;
 }
 .dropdown-content a hover {
@@ -95,6 +100,10 @@ b {
 .dropdown:hover .dropdown-content {
   display: block;
   background-color: #333;
+}
+
+.ja {
+  margin-left: 110px;
 }
 
 .pozadina {
@@ -117,7 +126,7 @@ b {
 .gumb {
   background-color: #0fb1a2;
   font-size: 24px;
-  color: black;
+  color: white;
   margin: 10px;
   border-radius: 10px;
   height: 90px;
@@ -135,6 +144,16 @@ b {
   height: auto;
   align-items: center;
   justify-content: center;
+}
+.grafOverlay a {
+  color: black;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+.grafOverlay a:hover {
+  color: #c22f39;
+  font-weight: 500;
+  font-size: 1.2rem;
 }
 
 .grafOverlay:hover .overlay {
@@ -176,7 +195,6 @@ b {
 }
 .hamburgerNav li a {
   color: white;
-  text-decoration: none;
   font-size: 1.5rem;
 }
 .hamburgerNav li a:hover {
@@ -222,7 +240,6 @@ b {
   font-size: 40px;
 }
 .kontaktico a {
-  text-decoration: none;
   color: white;
 }
 .kontaktico a:hover {
@@ -230,7 +247,6 @@ b {
 }
 .kontaktico a:active {
   color: white;
-  text-decoration: none;
 }
 
 .drustvene-mreze a {
@@ -253,7 +269,6 @@ b {
   margin-top: -150px;
 }
 .povratak a {
-  text-decoration: none;
   color: white;
 }
 .povratak a:hover {
@@ -262,7 +277,6 @@ b {
 }
 .povratak a:active {
   color: white;
-  text-decoration: none;
 }
 
 .hoverOverlay {
@@ -306,7 +320,7 @@ b {
   grid-template-rows: repeat(3, 75px);
   align-items: center;
   padding-left: 50px;
-  padding-top: 640px;
+  padding-top: 600px;
 }
 
 .grid-container2 {
