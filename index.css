@@ -21,6 +21,7 @@ a:visited,
 a:link,
 a:active {
   text-decoration: none;
+  color: white;
 }
 
 h1,
@@ -59,8 +60,11 @@ b {
   height: 80px;
   transition: top 0.2s;
 }
-#navbar a {
-  color: white;
+#navbar .fa-bars {
+  margin-right: 50px !important;
+}
+#navbar img {
+  margin-left: 40px;
 }
 
 .dropbtn {
@@ -88,7 +92,6 @@ b {
   background-color: #444;
 }
 .dropdown-content a {
-  color: black;
   padding: 12px 16px;
   display: block;
 }
@@ -145,13 +148,8 @@ b {
   align-items: center;
   justify-content: center;
 }
-.grafOverlay a {
-  color: black;
-  font-weight: 500;
-  font-size: 1.2rem;
-}
 .grafOverlay a:hover {
-  color: #c22f39;
+  color: #c22f39 !important;
   font-weight: 500;
   font-size: 1.2rem;
 }
@@ -194,15 +192,14 @@ b {
   padding: 1rem;
 }
 .hamburgerNav li a {
-  color: white;
   font-size: 1.5rem;
 }
 .hamburgerNav li a:hover {
-  color: #0fb1a2;
+  color: #0fb1a2 !important;
 }
 .hamburgerNav ul {
-  padding: 0;
-  margin: 0;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 .hamburgerNav i {
   color: white;
@@ -226,6 +223,28 @@ b {
   font-weight: 500;
   font-size: 24px;
 }
+.kontakt .lijevidio {
+  padding: 600px 0px 0px 20px !important;
+}
+.kontakt .lijevidio i {
+  font-size: 50px !important;
+}
+.kontakt .desnidio {
+  padding: 100px 0px 0px 90px !important;
+}
+.kontakt .desnidio i {
+  font-size: 50px !important;
+}
+.kontakt .desnidio a {
+  font-size: 50px;
+  text-align: center;
+}
+.kontakt .desnidio a:hover {
+  color: #c22f39;
+}
+.kontakt div {
+  color: white;
+}
 .kontakt button {
   background-color: #7f8c8d;
   padding: 15px;
@@ -235,27 +254,15 @@ b {
 .kontakt button:hover {
   background-color: #2ecc71;
 }
-
-.kontaktico i {
+.kontakt i {
   font-size: 40px;
+  margin-right: 20px;
 }
-.kontaktico a {
-  color: white;
-}
-.kontaktico a:hover {
+.kontakt a:hover {
   color: #0fb1a2;
 }
-.kontaktico a:active {
+.kontakt a:active {
   color: white;
-}
-
-.drustvene-mreze a {
-  font-size: 50px;
-  text-align: center;
-  color: white;
-}
-.drustvene-mreze a:hover {
-  color: #c22f39;
 }
 
 .model_viewer {
@@ -267,16 +274,6 @@ b {
 .povratak {
   font-size: 40px;
   margin-top: -150px;
-}
-.povratak a {
-  color: white;
-}
-.povratak a:hover {
-  transform: rotate(0deg);
-  color: white;
-}
-.povratak a:active {
-  color: white;
 }
 
 .hoverOverlay {
@@ -313,29 +310,6 @@ b {
   opacity: 1;
 }
 
-.grid-container1 {
-  color: white;
-  display: grid;
-  grid-template-columns: 70px 400px;
-  grid-template-rows: repeat(3, 75px);
-  align-items: center;
-  padding-left: 50px;
-  padding-top: 600px;
-}
-
-.grid-container2 {
-  color: white;
-  display: grid;
-  grid-template-columns: 650px;
-  grid-template-rows: 120px 130px;
-  align-items: center;
-  padding-left: 80px;
-  padding-top: 250px;
-}
-.grid-container2 i {
-  padding-left: 40px;
-}
-
 @media only screen and (max-width: 767px) {
   .hoverOverlay {
     position: relative;
@@ -343,8 +317,7 @@ b {
     max-width: 440px;
   }
   .overlay {
-    font-size: 12px;
-    padding: 20px;
+    font-size: 20px;
   }
   .ja {
     font-size: 2rem;
@@ -352,13 +325,20 @@ b {
   .gumb {
     font-size: 1rem;
   }
-  .kontaktico i {
-    font-size: 24px;
-  }
-  .drustvene-mreze i {
-    font-size: 32px;
-  }
-  i {
+  .kontakt {
     padding-left: 40px;
+  }
+  .kontakt .lijevidio {
+    padding: 100px 0px 0px 20px !important;
+  }
+  .kontakt .desnidio {
+    padding: 100px 0px 0px 20px !important;
+  }
+  .kontakt .desnidio i {
+    padding-left: 40px;
+  }
+  .povratak {
+    font-size: 40px;
+    margin-top: -700px;
   }
 }/*# sourceMappingURL=index.css.map */
