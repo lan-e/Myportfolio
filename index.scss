@@ -321,6 +321,16 @@ b {
   body {
     overflow-x: hidden !important;
   }
+  #navbar {
+    height: 60px;
+    img {
+      height: 50px;
+      width: 50px;
+    }
+    .fa-bars {
+      font-size: 30px;
+    }
+  }
   .hoverOverlay {
     position: relative;
     width: 100%;
