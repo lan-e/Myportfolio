@@ -317,6 +317,7 @@ b {
 //   }
 // }
 @media only screen and(max-width: 767px) {
+  html,
   body {
     overflow-x: hidden !important;
   }
