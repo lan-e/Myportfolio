@@ -3,9 +3,6 @@ body {
   background-color: black;
   height: 100%;
 }
-* {
-  border: 0px solid blue;
-}
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -26,10 +23,13 @@ b {
   font-weight: 500;
 }
 
-.fa-arrow-up:hover,
-.fa-bars:hover,
-.fa-xmark:hover {
+.fa-solid:hover {
   color: #0fb1a2 !important;
+}
+
+.fa-linkedin:hover,
+.fa-github:hover {
+  color: #c22f39;
 }
 .fa-bars {
   font-size: 32px;
@@ -112,9 +112,6 @@ b {
   min-height: 100%;
   background-color: black;
   color: white;
-}
-.font {
-  font-family: "Outfit", sans-serif;
 }
 .gumb {
   background-color: #0fb1a2;
@@ -208,7 +205,7 @@ b {
   background-color: black;
   color: white;
   h1 {
-    padding-bottom: 50px;
+    padding-bottom: 24px;
     margin-top: 80px;
   }
 }
@@ -239,31 +236,13 @@ b {
       font-size: 50px;
       text-align: center;
     }
-    a:hover {
-      color: #c22f39;
-    }
   }
   div {
     color: white;
   }
-  button {
-    background-color: #7f8c8d;
-    padding: 15px;
-    border: 0;
-    width: 50%;
-  }
-  button:hover {
-    background-color: #2ecc71;
-  }
   i {
     font-size: 40px;
     margin-right: 20px;
-  }
-  a:hover {
-    color: #0fb1a2;
-  }
-  a:active {
-    color: white;
   }
 }
 
@@ -364,7 +343,7 @@ b {
     padding-left: 40px;
     font-size: 16px;
     .lijevidio {
-      padding: 80px 15px 0px 15px !important;
+      padding: 100px 10px 0px 10px !important;
       i {
         font-size: 30px !important;
       }
