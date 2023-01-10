@@ -2,6 +2,7 @@ html,
 body {
   background-color: black;
   height: 100%;
+  width: 100%;
 }
 * {
   border: 0px solid blue;
@@ -338,15 +339,11 @@ b {
 //   }
 // }
 @media only screen and(max-width: 767px) {
+  html,
   body {
+    width: 100%;
     margin: 0;
     overflow-x: hidden !important;
-  }
-  .pozadina {
-    background-image: none !important;
-  }
-  .kontakt {
-    background-image: none !important;
   }
   .hoverOverlay {
     position: relative;
