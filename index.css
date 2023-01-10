@@ -315,10 +315,7 @@ b {
     max-width: 440px;
   }
   .overlay {
-    font-size: 20px;
-  }
-  .web {
-    font-size: 12px !important;
+    font-size: 16px;
   }
   .ja {
     font-size: 2rem;
@@ -328,18 +325,22 @@ b {
   }
   .kontakt {
     padding-left: 40px;
+    font-size: 16px;
   }
   .kontakt .lijevidio {
     padding: 80px 0px 0px 20px !important;
+  }
+  .kontakt .lijevidio i {
+    font-size: 30px !important;
   }
   .kontakt .desnidio {
     padding: 80px 0px 0px 20px !important;
   }
   .kontakt .desnidio i {
     padding-left: 40px;
+    font-size: 30px !important;
   }
-  .povratak {
-    font-size: 40px;
+  .kontakt .desnidio .povratak {
     padding-top: 0px;
   }
 }/*# sourceMappingURL=index.css.map */
