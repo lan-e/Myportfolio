@@ -9,7 +9,7 @@ body {
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 a:hover,
 a:visited,
@@ -99,7 +99,7 @@ b {
 
 //HOME SLIDE
 .ja {
-  margin-left: 110px;
+  margin-left: 20px;
 }
 //POZADINSKA SLIKA
 .pozadina {
@@ -207,6 +207,10 @@ b {
   min-height: 100%;
   background-color: black;
   color: white;
+  h1 {
+    padding-bottom: 50px;
+    margin-top: 80px;
+  }
 }
 
 /* Kontakt */
@@ -342,6 +346,9 @@ b {
   .overlay {
     font-size: 16px;
   }
+  .web {
+    font-size: 12px;
+  }
   .ja {
     font-size: 2rem;
   }
@@ -361,7 +368,7 @@ b {
       padding: 80px 0px 0px 20px !important;
       i {
         padding-left: 40px;
-        font-size: 30px !important;
+        font-size: 35px !important;
       }
       .povratak {
         padding-top: 0px;

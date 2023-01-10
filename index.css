@@ -11,7 +11,7 @@ body {
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 a:hover,
@@ -104,7 +104,7 @@ b {
 }
 
 .ja {
-  margin-left: 110px;
+  margin-left: 20px;
 }
 
 .pozadina {
@@ -208,6 +208,10 @@ b {
   min-height: 100%;
   background-color: black;
   color: white;
+}
+.o-meni h1 {
+  padding-bottom: 50px;
+  margin-top: 80px;
 }
 
 /* Kontakt */
@@ -317,6 +321,9 @@ b {
   .overlay {
     font-size: 16px;
   }
+  .web {
+    font-size: 12px;
+  }
   .ja {
     font-size: 2rem;
   }
@@ -338,7 +345,7 @@ b {
   }
   .kontakt .desnidio i {
     padding-left: 40px;
-    font-size: 30px !important;
+    font-size: 35px !important;
   }
   .kontakt .desnidio .povratak {
     padding-top: 0px;
