@@ -2,7 +2,6 @@ html,
 body {
   background-color: black;
   height: 100%;
-  margin: 0;
 }
 
 * {
@@ -105,7 +104,7 @@ b {
 }
 
 .ja {
-  margin-left: 20px;
+  margin-left: 110px;
 }
 
 .pozadina {
@@ -327,6 +326,7 @@ b {
   }
   .ja {
     font-size: 2rem;
+    margin-left: 20px;
   }
   .gumb {
     font-size: 1rem;
