@@ -75,16 +75,14 @@
   #navbar .fa-bars {
     font-size: 30px;
   }
-  .hoverOverlay {
-    position: relative;
-    width: 100%;
-    max-width: 440px;
-  }
   .overlay {
     font-size: 16px;
   }
   .web {
-    font-size: 12px;
+    font-size: 11px !important;
+  }
+  .web h5 {
+    font-size: 13px;
   }
   .intro {
     font-size: 2rem;
