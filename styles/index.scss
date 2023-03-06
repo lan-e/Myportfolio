@@ -1,0 +1,58 @@
+@import "contact";
+@import "home";
+@import "mobile";
+@import "nav";
+@import "overlay";
+html,
+body {
+  background-color: black;
+  height: 100%;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden !important;
+}
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: white;
+}
+h1,
+h2 {
+  font-weight: 300;
+  color: white;
+}
+b {
+  font-weight: 500;
+}
+.fa-solid:hover {
+  color: #0fb1a2;
+}
+.fa-linkedin:hover,
+.fa-github:hover {
+  color: #c22f39;
+}
+.fa-bars {
+  font-size: 32px;
+  cursor: pointer;
+  color: white;
+}
+.fa-xmark {
+  font-size: 36px;
+  cursor: pointer;
+  padding: 15px 45px 10px 10px;
+}
+.slide {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+#omeni {
+  padding-top: 140px;
+}
+.o-meni {
+  margin-bottom: 150px;
+  color: white;
+}

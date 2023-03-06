@@ -1,0 +1,54 @@
+@media only screen and (max-width: 767px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+  #navbar {
+    height: 60px;
+    img {
+      height: 50px;
+      width: 50px;
+    }
+    .fa-bars {
+      font-size: 30px;
+    }
+  }
+  .hoverOverlay {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+  }
+  .overlay {
+    font-size: 16px;
+  }
+  .web {
+    font-size: 12px;
+  }
+  .intro {
+    font-size: 2rem;
+    margin-left: 20px;
+  }
+  .gumb {
+    font-size: 1rem;
+  }
+  .kontakt {
+    padding-left: 40px;
+    font-size: 16px;
+    .lijevidio {
+      padding: 100px 10px 0px 10px !important;
+      i {
+        font-size: 30px !important;
+      }
+    }
+    .desnidio {
+      padding: 80px 15px 0px 15px !important;
+      i {
+        padding-left: 40px;
+        font-size: 35px !important;
+      }
+      .povratak {
+        padding-top: 0px;
+      }
+    }
+  }
+}

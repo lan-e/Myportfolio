@@ -1,0 +1,33 @@
+.kontakt {
+  background-image: url("../img/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100%;
+  color: #999 !important;
+  font-weight: 500;
+  font-size: 24px;
+  .lijevidio {
+    padding: 600px 0px 0px 20px;
+    i {
+      font-size: 50px !important;
+    }
+  }
+  .desnidio {
+    padding: 100px 0px 0px 90px !important;
+    i {
+      font-size: 50px !important;
+    }
+    a {
+      font-size: 50px;
+      text-align: center;
+    }
+  }
+  div {
+    color: white;
+  }
+  i {
+    font-size: 40px;
+    margin-right: 20px;
+  }
+}

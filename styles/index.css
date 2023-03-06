@@ -1,0 +1,294 @@
+.kontakt {
+  background-image: url("../img/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100%;
+  color: #999 !important;
+  font-weight: 500;
+  font-size: 24px;
+}
+.kontakt .lijevidio {
+  padding: 600px 0px 0px 20px;
+}
+.kontakt .lijevidio i {
+  font-size: 50px !important;
+}
+.kontakt .desnidio {
+  padding: 100px 0px 0px 90px !important;
+}
+.kontakt .desnidio i {
+  font-size: 50px !important;
+}
+.kontakt .desnidio a {
+  font-size: 50px;
+  text-align: center;
+}
+.kontakt div {
+  color: white;
+}
+.kontakt i {
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+.intro {
+  margin-left: 110px;
+}
+
+.pozadina {
+  background-image: url("../img/banner.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.home {
+  min-height: 100%;
+}
+
+.gumb {
+  background-color: #0fb1a2;
+  box-shadow: 5px 2px 8px #333;
+  font-size: 24px;
+  color: white;
+  margin: 10px;
+  border-radius: 10px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+  #navbar {
+    height: 60px;
+  }
+  #navbar img {
+    height: 50px;
+    width: 50px;
+  }
+  #navbar .fa-bars {
+    font-size: 30px;
+  }
+  .hoverOverlay {
+    position: relative;
+    width: 100%;
+    max-width: 440px;
+  }
+  .overlay {
+    font-size: 16px;
+  }
+  .web {
+    font-size: 12px;
+  }
+  .intro {
+    font-size: 2rem;
+    margin-left: 20px;
+  }
+  .gumb {
+    font-size: 1rem;
+  }
+  .kontakt {
+    padding-left: 40px;
+    font-size: 16px;
+  }
+  .kontakt .lijevidio {
+    padding: 100px 10px 0px 10px !important;
+  }
+  .kontakt .lijevidio i {
+    font-size: 30px !important;
+  }
+  .kontakt .desnidio {
+    padding: 80px 15px 0px 15px !important;
+  }
+  .kontakt .desnidio i {
+    padding-left: 40px;
+    font-size: 35px !important;
+  }
+  .kontakt .desnidio .povratak {
+    padding-top: 0px;
+  }
+}
+.hamburgerNav {
+  z-index: 1;
+  top: 0;
+  left: -100%;
+  bottom: 0;
+  width: 100%;
+  transition: 0.5s ease;
+  position: fixed;
+  background-color: black;
+}
+.hamburgerNav li {
+  list-style: none;
+  text-align: center;
+  padding: 1rem;
+}
+.hamburgerNav li a {
+  font-size: 1.5rem;
+}
+.hamburgerNav li a:hover {
+  color: #0fb1a2 !important;
+}
+.hamburgerNav ul {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+.hamburgerNav i {
+  color: white;
+}
+
+#navbar {
+  background-color: #333;
+  height: 80px;
+  transition: top 0.2s;
+}
+#navbar .fa-bars {
+  margin-right: 65px !important;
+}
+#navbar img {
+  margin-left: 40px;
+}
+
+.dropbtn {
+  padding: 100px 40px 100px 40px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 150px;
+  z-index: 1;
+}
+.dropdown-content a {
+  padding: 12px 16px;
+  display: block;
+}
+.dropdown-content a:hover {
+  color: #0fb1a2;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  background-color: #333;
+}
+
+.povratak {
+  font-size: 40px;
+  padding-top: 330px;
+}
+
+.grafOverlay {
+  position: relative;
+}
+.grafOverlay img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.grafOverlay a:hover {
+  color: #c22f39 !important;
+  font-weight: 500;
+}
+
+.grid-v-space {
+  margin: 12px 0 12px 0;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: calc(100% - 24px);
+  height: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 16px;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+html,
+body {
+  background-color: black;
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden !important;
+}
+
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+  color: white;
+}
+
+h1,
+h2 {
+  font-weight: 300;
+  color: white;
+}
+
+b {
+  font-weight: 500;
+}
+
+.fa-solid:hover {
+  color: #0fb1a2;
+}
+
+.fa-linkedin:hover,
+.fa-github:hover {
+  color: #c22f39;
+}
+
+.fa-bars {
+  font-size: 32px;
+  cursor: pointer;
+  color: white;
+}
+
+.fa-xmark {
+  font-size: 36px;
+  cursor: pointer;
+  padding: 15px 45px 10px 10px;
+}
+
+.slide {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+#omeni {
+  padding-top: 140px;
+}
+
+.o-meni {
+  margin-bottom: 150px;
+  color: white;
+}/*# sourceMappingURL=index.css.map */
