@@ -27,15 +27,23 @@
   }
 }
 #navbar {
-  background-color: #333;
-  height: 80px;
-  transition: top 0.2s;
+  background-color: rgba(0, 0, 0, 0);
+  height: 70px;
   .fa-bars {
     margin-right: 65px !important;
   }
   img {
     margin-left: 40px;
   }
+}
+.navbar-scrolled {
+  background-color: #333;
+}
+.homenav {
+  transition: all 0.4s;
+}
+.mouseover {
+  background-color: #333;
 }
 //DROPDOWN
 .dropbtn {
@@ -49,6 +57,7 @@
   display: none;
   position: absolute;
   background-color: #333;
+  border-radius: 10px;
   min-width: 150px;
   z-index: 1;
   a {
@@ -64,6 +73,6 @@
   background-color: #333;
 }
 .povratak {
-  font-size: 40px;
+  // font-size: 40px;
   padding-top: 330px;
 }

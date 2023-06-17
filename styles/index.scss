@@ -1,3 +1,4 @@
+@import "loaders";
 @import "contact";
 @import "home";
 @import "mobile";
@@ -7,6 +8,8 @@ html,
 body {
   background-color: black;
   height: 100%;
+  user-select: none;
+  scrollbar-width: thin;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -32,7 +35,8 @@ b {
   color: #0fb1a2;
 }
 .fa-linkedin:hover,
-.fa-github:hover {
+.fa-github:hover,
+.fa-youtube:hover {
   color: #c22f39;
 }
 .fa-bars {
@@ -55,4 +59,33 @@ b {
 .o-meni {
   margin-bottom: 150px;
   color: white;
+}
+.blueWrap {
+  color: #0fb1a2;
+}
+#show-btn {
+  margin-bottom: 40px;
+}
+#hide-btn {
+  display: none;
+  margin-bottom: 40px;
+}
+#show-hide {
+  display: none;
+}
+.btnSmall {
+  background-color: #0fb1a2;
+  box-shadow: 5px 2px 8px #333;
+  font-size: 18px;
+  color: white;
+  border: 0;
+  border-radius: 10px;
+  height: 50px;
+  &.Red {
+    background-color: #c22f39;
+  }
+}
+hr {
+  color: #0fb1a2;
+  opacity: 0.5;
 }
