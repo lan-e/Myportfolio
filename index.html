@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Porfolio Nela" />
     <title>Portfolio Nela</title>
     <link href="alati/bootstrap/bootstrap.min.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Roboto:wght@300;400;500&display=swap"
@@ -15,61 +16,64 @@
 
 <body>
     <!-- Slide Home -->
-    <div class="slide home d-flex flex-column pozadina" id="pocetna">
-        <div class="container">
-            <div class="row fixed-top" id="navbar">
-                <div class="col d-flex justify-content-between align-items-center homenav">
-                    <a href="#pocetna"><img src="img/myicon.png" width="60px" /></a>
-                    <div class="d-none d-lg-block">
-                        <div class="dropdown">
-                            <a href="#projekti" class="dropbtn">Projekti<i class="fa fa-caret-down"></i></a>
-                            <div class="dropdown-content">
-                                <a href="#programiranje">Programiranje</a>
-                                <a href="#web">Web dizajn</a>
-                                <a href="#graficki">Grafički dizajn</a>
-                                <a href="#fotografija">Fotografija</a>
+    <div class="slide home d-flex flex-column position-relative" id="pocetna">
+        <img src="img/banner.png" class="position-absolute pozadina">
+        <div class="position-absolute home">
+            <div class="container">
+                <div class="row fixed-top" id="navbar">
+                    <div class="col d-flex justify-content-between align-items-center homenav">
+                        <a href="#pocetna"><img src="img/myicon.png" width="60px" /></a>
+                        <div class="d-none d-lg-block">
+                            <div class="dropdown">
+                                <a href="#projekti" class="dropbtn">Projekti<i class="fa fa-caret-down"></i></a>
+                                <div class="dropdown-content">
+                                    <a href="#programiranje">Programiranje</a>
+                                    <a href="#web">Web dizajn</a>
+                                    <a href="#graficki">Grafički dizajn</a>
+                                    <a href="#fotografija">Fotografija</a>
+                                </div>
                             </div>
+                            <a class="me-5" href="#omeni">O meni</a>
+                            <a class="me-5" href="#kontakt">Kontakt</a>
                         </div>
-                        <a class="me-5" href="#omeni">O meni</a>
-                        <a class="me-5" href="#kontakt">Kontakt</a>
+                        <i class="fa-solid fa-bars d-lg-none"></i>
                     </div>
-                    <i class="fa-solid fa-bars d-lg-none"></i>
                 </div>
             </div>
-        </div>
-        <div class="container mt-auto mb-auto">
-            <div class="row">
-                <div class="col">
-                    <div class="d-flex">
-                        <a href="#programiranje">
-                            <div class="p-2 gumb text-decoration-none">PROGRAMIRANJE I WEB DIZAJN</div>
-                        </a>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="d-flex">
+                            <a href="#programiranje">
+                                <div class="p-5 gumb">PROGRAMIRANJE I WEB DIZAJN</div>
+                            </a>
+                        </div>
+                        <div class="d-flex">
+                            <a href="#graficki">
+                                <div class="p-4 gumb">
+                                    GRAFIČKI DIZAJN
+                                </div>
+                            </a>
+                            <a href="#fotografija">
+                                <div class="p-3 gumb">FOTOGRAFIJA</div>
+                            </a>
+                        </div>
                     </div>
-                    <div class="d-flex">
-                        <a href="#graficki">
-                            <div class="p-2 gumb text-decoration-none">
-                                GRAFIČKI DIZAJN
-                            </div>
-                        </a>
-                        <a href="#fotografija">
-                            <div class="p-2 gumb text-decoration-none">FOTOGRAFIJA</div>
-                        </a>
+                    <div class="col intro">
+                        <h1>
+                            <b>Ja sam Nela,<br /> Frontend Developer</b>
+                            <a href="#omeni">
+                                <div class="eyesloader"></div>
+                            </a>
+                        </h1>
                     </div>
-                </div>
-                <div class="col intro">
-                    <h1>
-                        <b>Ja sam Nela,<br /> Frontend Developer</b>
-                        <a href="#omeni">
-                            <div class="eyesloader">
-                        </a>
-                    </h1>
                 </div>
             </div>
-        </div>
-        <div class="d-flex justify-content-center">
-            <a href="#programiranje">
-                <div class="downLoader"></div>
-            </a>
+            <div class="d-flex justify-content-center loaderDown">
+                <a href="#programiranje">
+                    <div class="downLoader"></div>
+                </a>
+            </div>
         </div>
     </div>
     <!-- Slide moji-radovi (Projekti) -->
@@ -77,8 +81,7 @@
         <div class="container mt-auto mb-auto">
             <div class="row">
                 <div class="col content">
-                    <div class="row mt-4">
-                        <hr>
+                    <div class="row">
                         <div id="programiranje">
                             <br /><br /><br /><br />
                             <div class="d-flex align-items-center">
@@ -89,79 +92,91 @@
                         <div class="col-lg-6 grid-v-space grafOverlay">
                             <img src="img/sopgweb.jpg" alt="" />
                             <div class="overlay web">
-                                <h5>Web trgovina</h5><b>2022.</b>
+                                <a href="https://sopgbakale.vercel.app/" target="_blank">
+                                    <h5>Web trgovina</h5>
+                                </a>
                                 Izrada web trgovine za SOPG Bakale. Rađeno po tutorialu uz preinake. Poslužilo za
                                 učenje Reacta. Korišteni React.js, Next.js, Stripe, Sanity.
-                                <a href="https://sopgbakale.vercel.app/" target="_blank">...više</a>
+                                <b>2022.</b>
                             </div>
                         </div>
                         <div class="col-lg-6 grid-v-space grafOverlay">
                             <img src="img/sofa.jpg" alt="" />
                             <div class="overlay web">
-                                <h5>Mini Sofascore Aplikacija</h5><b>2023.</b>
+                                <a href="https://minisofa-nela.vercel.app/" target="_blank">
+                                    <h5>Mini Sofascore Aplikacija</h5>
+                                </a>
                                 Izrada web aplikacije pomoću Sofascore Academy API. Prikaz utakmica po sportovima,
                                 promjena teme i jezika u postavkama. Korišteni alati: React.js, Next.js, Typescript,
                                 Zeplin.
-                                <a href="https://minisofa-nela.vercel.app/" target="_blank">...više</a>
+                                <b>2023.</b>
                             </div>
                         </div>
                         <div class="col-lg-6 grid-v-space grafOverlay">
                             <img src="img/pokemon.jpg" alt="" />
                             <div class="overlay web">
-                                <h5>Pokemon</h5><b>2023.</b>
+                                <a href="https://pokemon-api-sofa.vercel.app/" target="_blank">
+                                    <h5>Pokemon</h5>
+                                </a>
                                 Izrada stranice s prikazom pokemona. Mogućnost brisanja i prikaza detalja o pojedinom
                                 pokemonu. Korišteni alati: Pokemon API, HTML, CSS, JS.
-                                <a href="https://pokemon-api-sofa.vercel.app/" target="_blank">...više</a>
+                                <b>2023.</b>
                             </div>
                         </div>
                         <div class="col-lg-6 grid-v-space grafOverlay">
                             <img src="img/trivia.jpg" alt="" />
                             <div class="overlay web">
-                                <h5>Kviz znanja</h5><b>2023.</b>
-                                <div>
-                                    Mogućnost odabira kategorije i težine kviza. Prikaz (ne)točnog odgovora, skupljanje
-                                    bodova i konfeti na kraju kviza. Korišteni alati: React.js, Trivia
-                                    API.
-
-                                </div>
-                                <a href="https://trivia-quiz-sofa.vercel.app/" target="_blank">...više</a>
+                                <a href="https://trivia-quiz-sofa.vercel.app/" target="_blank">
+                                    <h5>Kviz znanja</h5>
+                                </a>
+                                Mogućnost odabira kategorije i težine kviza. Prikaz (ne)točnog odgovora, skupljanje
+                                bodova i konfeti na kraju kviza. Korišteni alati: React.js, Trivia
+                                API.
+                                <b>2023.</b>
                             </div>
                         </div>
                         <div class="col-lg-6 grid-v-space grafOverlay">
                             <img src="img/zuc.jpg" alt="" />
                             <div class="overlay web">
-                                <h5>Web stranica</h5><b>2023.</b>
+                                <a href="https://zuc-vz.vercel.app/" target="_blank">
+                                    <h5>Web stranica</h5>
+                                </a>
                                 Izrada web stranice za ŽUC - Županijska uprava za ceste Varaždinske županije. Korišteni
-                                alati:
-                                Figma, HTML, CSS, JS, Bootstrap.
-                                <a href="https://zuc-vz.vercel.app/" target="_blank">...više</a>
+                                alati: Figma, HTML, CSS, JS, Bootstrap.
+                                <b>2023.</b>
                             </div>
                         </div>
                         <div class="col-lg-6 grid-v-space grafOverlay">
                             <img src="img/accordion.jpg" alt="" />
                             <div class="overlay web">
-                                <h5>Web trgovina</h5><b>2023.</b>
+                                <a href="https://accordion3d.vercel.app/" target="_blank">
+                                    <h5>Web trgovina</h5>
+                                </a>
                                 Izrada web trgovine za učitelja harmonike koji iznajmljuje i prodaje harmonike.
                                 Korišteni alati: HTML, CSS, JS, Bootstrap, Blaze Slider, Lightbox.
-                                <a href="https://accordion3d.vercel.app/" target="_blank">...više</a>
+                                <b>2023.</b>
                             </div>
                         </div>
                         <div class="col-lg-6 grid-v-space grafOverlay">
                             <img src="img/dianas.jpg" alt="" />
                             <div class="overlay web">
-                                <h5>Portfolio/web trgovina</h5><b>2023.</b>
+                                <a href="https://dianas-garden.vercel.app/" target="_blank">
+                                    <h5>Portfolio/web trgovina</h5>
+                                </a>
                                 Izrada web trgovine za kreativni studio Diana's Garden. Korišteni alati: HTML, CSS, JS,
                                 Bootstrap, Blaze Slider, Lightbox.
-                                <a href="https://dianas-garden.vercel.app/" target="_blank">...više</a>
+                                <b>2023.</b>
                             </div>
                         </div>
                         <div class="col-lg-6 grid-v-space grafOverlay">
                             <img src="img/portfolio.jpg" alt="" />
                             <div class="overlay web">
-                                <h5>Stari portfolio</h5><b>2022.</b>
+                                <a href="https://lan-e.netlify.app/" target="_blank">
+                                    <h5>Stari portfolio</h5>
+                                </a>
                                 Portfolio izrađen za vlastite potrebe. Rađeno po tutorialu uz preinake. Poslužilo za
                                 učenje Reacta i prikaz tadašnjih radova.
-                                <a href="https://lan-e.netlify.app/" target="_blank">...više</a>
+                                <b>2022.</b>
                             </div>
                         </div>
                     </div>
@@ -174,38 +189,46 @@
                         <div class="col-lg-6 grid-v-space grafOverlay">
                             <img src="img/dontwaste.jpg" alt="" />
                             <div class="overlay web">
-                                <h5>Web stranica</h5><b>2022.</b>
+                                <a href="https://www.youtube.com/watch?v=C8ICd0vkwck" target="_blank">
+                                    <h5>Web stranica</h5>
+                                </a>
                                 Izrada dizajna i prototypea u Figmi za izmišljenu
                                 organizaciju koja se bavi rješavanjem viška hrane.
-                                <a href="https://www.youtube.com/watch?v=C8ICd0vkwck" target="_blank">...više</a>
+                                <b>2022.</b>
                             </div>
                         </div>
                         <div class="col-lg-6 grid-v-space grafOverlay">
                             <img src="img/portfoliodizajn.jpg" alt="" />
                             <div class="overlay web">
-                                <h5>Vlastiti portfolio</h5><b>2022.</b>
-                                Izrada dizajna i prototypea u Figmi za trenutni portfolio.
                                 <a href="https://www.figma.com/proto/3OIM3RH11zl6XAF9KU3PqZ/My-portfolio?node-id=103-28&scaling=scale-down-width&page-id=103%3A27&starting-point-node-id=103%3A28&hide-ui=1"
-                                    target="_blank">...više</a>
+                                    target="_blank">
+                                    <h5>Vlastiti portfolio</h5>
+                                </a>
+                                Izrada dizajna i prototypea u Figmi za trenutni portfolio.
+                                <b>2022.</b>
                             </div>
                         </div>
                         <div class="col-lg-6 grid-v-space grafOverlay">
                             <img src="img/zuc.jpg" alt="" />
                             <div class="overlay web">
-                                <h5>Web stranica</h5><b>2023.</b>
+                                <a href="https://www.figma.com/proto/gziqKFd2OX1zjlIUBh2dRf/zuc?node-id=61-288&starting-point-node-id=61%3A288&scaling=scale-down-width&hide-ui=1"
+                                    target="_blank">
+                                    <h5>Web stranica</h5>
+                                </a>
                                 Izrada dizajna u Figmi za web stranicu ŽUC - Županijska uprava za ceste Varaždinske
                                 županije.
-                                <a href="https://www.figma.com/proto/gziqKFd2OX1zjlIUBh2dRf/zuc?node-id=61-288&starting-point-node-id=61%3A288&scaling=scale-down-width&hide-ui=1"
-                                    target="_blank">...više</a>
+                                <b>2023.</b>
                             </div>
                         </div>
                         <div class="col-lg-6 grid-v-space grafOverlay">
                             <img src="img/ciro.jpg" alt="" />
                             <div class=" overlay web">
-                                <h5>Aplikacija</h5><b>2023.</b>
-                                Izrada dizajna i prototypea u Figmi za aplikaciju Ćiro.
                                 <a href="https://www.figma.com/proto/6YE2vpr9R2njHTIexUsMv2/%C4%86iro02---nova-verzija?type=design&node-id=37-6935&scaling=min-zoom&page-id=37%3A6261&starting-point-node-id=37%3A6935&hide-ui=1"
-                                    target="_blank">...više</a>
+                                    target="_blank">
+                                    <h5>Aplikacija</h5>
+                                </a>
+                                Izrada dizajna i prototypea u Figmi za aplikaciju Ćiro.
+                                <b>2023.</b>
                             </div>
                         </div>
                     </div>
@@ -227,26 +250,26 @@
                         <div class="col-md-6 col-lg-4 grid-v-space grafOverlay">
                             <img src="img/page1.jpg" alt="" loading="lazy" class="img-fluid" />
                             <div class="overlay">
-                                <h5>Vinicunca (Planina 7 boja)</h5>
+                                <a href="img/page2.jpg" data-lightbox="projekt1">
+                                    <h5>Vinicunca (Planina 7 boja)</h5>
+                                </a>
+                                <a href="img/brosura.jpg" data-lightbox="projekt1"></a>
                                 Brošura za izmišljeno organizirano planinarenje na planinu Vinicuncu. Otvorena brošura -
                                 oblik broja 7. Rastvorena - oblik trokuta koji se postavi kao planina.
                                 <b>2021.</b>
-                                <a href="img/page2.jpg" data-lightbox="projekt1">...više</a>
-                                <a href="img/brosura.jpg" data-lightbox="projekt1"></a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 grid-v-space grafOverlay">
                             <img src="img/plakat.png" alt="" loading="lazy" />
                             <div class="overlay">
-                                <h5>PEEK&POKE</h5>
+                                <a href="img/p&p.png" data-lightbox="projektP&P">
+                                    <h5>PEEK&POKE</h5>
+                                </a>
                                 Izrada plakata za izmišljeni
                                 sajam starih videoigara i tehnologije.
                                 Ideja je suradnja s muzejom
                                 Peek&Poke iz Rijeke.
                                 <b>2021.</b>
-                                <a href="img/p&p.png" data-lightbox="projektP&P">
-                                    ...više
-                                </a>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 grid-v-space grafOverlay">
@@ -262,46 +285,46 @@
                         <div class="col-md-6 col-lg-4 grid-v-space grafOverlay">
                             <img src="img/brosuraPortfolio1.jpg" alt="" loading="lazy" class="img-fluid" />
                             <div class="overlay">
-                                <h5>Brošura s vlastitim radovima</h5>
+                                <a href="img/brosuraPortfolio.jpg" data-lightbox="projekt">
+                                    <h5>Brošura s vlastitim radovima</h5>
+                                </a>
                                 Izrada brošure s radovima na kolegiju Grafički dizajn.
                                 <b>2022.</b>
-                                <a href="img/brosuraPortfolio.jpg" data-lightbox="projekt">...više</a>
+
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 grid-v-space grafOverlay">
                             <img src="img/foxy.jpg" alt="" loading="lazy" />
                             <div class="overlay">
-                                <h5>EMI.FOX beauty</h5>
-                                Logo, cjenik i poklon bon za makeup studio.
-                                <b>2023.</b>
                                 <a href="img/fox_bon.jpg" data-lightbox="projekt2">
-                                    ...više
+                                    <h5>EMI.FOX beauty</h5>
                                 </a>
                                 <a href="img/cjenik.jpg" data-lightbox="projekt2"></a>
+                                Logo, cjenik i poklon bon za makeup studio.
+                                <b>2023.</b>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 grid-v-space grafOverlay">
                             <img src="img/logoND.jpg" alt="" loading="lazy" />
                             <div class="overlay">
-                                <h5>Vlastiti logo</h5>
-                                Izrada logotipa od
-                                vlastitih inicijala u svrhu uporabe za
-                                vlastite potrebe - za portfolio.
-                                <b>2022.</b> <a href="img/mockup.jpg" data-lightbox="project3">
-                                    ...više
+                                <a href="img/mockup.jpg" data-lightbox="project3">
+                                    <h5>Vlastiti logo</h5>
                                 </a>
+                                Izrada logotipa od vlastitih inicijala u svrhu uporabe za
+                                vlastite potrebe - za portfolio.
+                                <b>2022.</b>
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-4 grid-v-space grafOverlay">
                             <img src="img/sopg.jpg" alt="" loading="lazy" class="img-fluid" />
                             <div class="overlay">
-                                <h5>SOPG Bakale</h5>
+                                <a href="img/vizitke.jpg" data-lightbox="project4">
+                                    <h5>SOPG Bakale</h5>
+                                </a>
                                 Logo za SOPG Bakale iz Karlovca.
                                 Bave se uzgojem istarskog i rimskog
                                 lješnjaka i izradom meda.
-                                <b>2022.</b> <a href="img/vizitke.jpg" data-lightbox="project4">
-                                    ...više
-                                </a>
+                                <b>2022.</b>
                                 <a href="img/lightsopg.jpg" data-lightbox="project4"></a>
                                 <a href="img/transpar.jpg" data-lightbox="project4"></a>
                                 <a href="img/sign.jpg" data-lightbox="project4"></a>
@@ -317,18 +340,17 @@
                         <div class="col-md-12 col-lg-4 grid-v-space grafOverlay">
                             <img src="/img/casopis.png" />
                             <div class="overlay">
-                                <br />
-                                <h5>5th Lane</h5>
+                                <a href="https://drive.google.com/file/d/1FpKmhDFKIA-Nh0NuBgY5MDa3vOWrLIJi/view?usp=sharing"
+                                    target="_blank">
+                                    <h5>5th Lane</h5>
+                                </a>
                                 Časopis koji sadrži sve fotografije odrađene kroz kolegij Medijska fotografija.
                                 <b>2023.</b>
-                                <a href="https://drive.google.com/file/d/1FpKmhDFKIA-Nh0NuBgY5MDa3vOWrLIJi/view?usp=sharing"
-                                    target="_blank">...više</a>
                             </div>
                         </div>
                         <div class="col-md-12 col-lg-4 grid-v-space grafOverlay">
                             <img src="/img/foto1.jpg" />
                             <div class="overlay">
-                                <br />
                                 <h5>Paranoid Android</h5>
                                 Ciklus života. Stup dijeli djetinjstvo i odraslu dob. Ljudi na mobitelu okrenuti su
                                 prema kameri, dok su baka i dijete
@@ -462,47 +484,52 @@
         </div>
     </div>
     <!-- Slide Kontakt -->
-    <div class="slide  kontakt  d-flex flex-column">
-        <div class="container mb-auto " id="kontakt">
-            <div class="row">
-                <div class="col content">
-                    <div class="row">
-                        <div class="col-lg-6 lijevidio">
-                            <div>
-                                <a href="tel:097/723-8354">
-                                    <i class="fa-solid fa-phone"></i></a><span>097/723-8354</span>
-                            </div>
-                            <div>
-                                <a href="mailto:neladuranec@gmail.com" target="_blank"><i
-                                        class="fa-solid fa-envelope"></i></a> <span>neladuranec@gmail.com</span>
-                            </div>
-                            <div>
-                                <a href="https://goo.gl/maps/3qKs4YCVKvwyF1wc6" target="_blank"><i
-                                        class="fa-solid fa-house"></i></a><span>Ul. 104. brigade 3 Varaždin</span>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 mt-4 mt-lg-0 desnidio">
-                            <div class="row">
-                                <div class="col ">
-                                    O MENI<br />
-                                    Studentica sam Sveučilišta Sjever. Smatram da imam smisla za dizajn i
-                                    kompoziciju. Zanima me frontend developing.
+    <div class="position-relative">
+        <div class="position-absolute contact-img-container"></div>
+        <div class="slide contact d-flex flex-column position-absolute">
+            <div class="container mb-auto " id="kontakt">
+                <div class="row">
+                    <div class="col content">
+                        <div class="row">
+                            <div class="col-lg-6 lijevidio">
+                                <div class="d-flex align-items-center">
+                                    <a href="tel:097/723-8354">
+                                        <i class="fa-solid fa-phone"></i></a><span>097/723-8354</span>
                                 </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="col">
+                                <div class="d-flex align-items-center">
+                                    <a href="mailto:neladuranec@gmail.com" target="_blank"><i
+                                            class="fa-solid fa-envelope"></i></a> <span>neladuranec@gmail.com</span>
+                                </div>
+                                <div class="d-flex align-items-center">
                                     <a href="https://www.linkedin.com/in/nela-duranec/" target="_blank">
-                                        <i class="fab fa-linkedin"></i></a>
-                                    <a href="https://github.com/lan-e" target="_blank"><i class="fab fa-github"></i></a>
-                                    <a href="https://www.youtube.com/channel/UCSNk9SHQk9WF0uuKhFgWsWg"
-                                        target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                        <i class="fab fa-linkedin"></i></a><span>Nela Đuranec</span>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col d-flex justify-content-end align-items-center povratak">
-                                    <a href="#pocetna">
-                                        <div class="upLoader"></div>
-                                    </a>
+                            <div class="col-lg-6 mt-4 mt-lg-0 desnidio">
+                                <div class="row">
+                                    <div class="col ">
+                                        O MENI<br />
+                                        Studentica sam multimedije. Zanima me frontend development.
+                                        Imala sam priliku sudjelovati u Sofascore Fronted Akademiji te odrađivati praksu
+                                        kao frontend developer. Tehnologije s kojima sam se susrela: HTML, CSS, JS,
+                                        Typescript,
+                                        Bootstrap, React.js, Next.js.
+                                    </div>
+                                </div>
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <a href="https://github.com/lan-e" target="_blank"><i
+                                                class="fab fa-github"></i></a>
+                                        <a href="https://www.youtube.com/channel/UCSNk9SHQk9WF0uuKhFgWsWg"
+                                            target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col d-flex justify-content-end align-items-center povratak">
+                                        <a href="#pocetna">
+                                            <div class="upLoader"></div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
                         </div>

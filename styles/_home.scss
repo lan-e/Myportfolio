@@ -2,23 +2,43 @@
   margin-left: 110px;
 }
 .pozadina {
-  background-image: url("../img/banner.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  mask-image: gradient();
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left 10%,
+    left bottom,
+    from(rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 0.5))
+  );
 }
 .home {
-  min-height: 100%;
+  padding-top: 35vh;
+  height: 100%;
+  width: 100%;
 }
 .gumb {
   background-color: #0fb1a2;
-  box-shadow: 5px 2px 8px #333;
-  font-size: 24px;
-  color: white;
+  box-shadow: 5px 2px 8px #555;
+  font-size: 22px;
+  color: #333;
   margin: 10px;
   border-radius: 10px;
   height: 90px;
   display: flex;
   justify-content: center;
   align-items: center;
+  &:hover {
+    background: rgb(52, 209, 194);
+    background: linear-gradient(
+      56deg,
+      rgba(52, 209, 194, 1) 0%,
+      rgba(15, 177, 162, 1) 67%
+    );
+  }
+}
+.loaderDown {
+  padding-top: 25vh;
 }

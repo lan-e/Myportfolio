@@ -1,25 +1,39 @@
-.kontakt {
+.contact-img-container {
+  height: 1000px;
+  width: 100%;
   background-image: url("../img/banner.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 100%;
-  color: #999 !important;
+  mask-image: gradient();
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left 10%,
+    left bottom,
+    from(rgba(0, 0, 0, 0)),
+    to(rgba(0, 0, 0, 0.8))
+  );
+}
+.contact {
+  width: 100%;
+  // color: #999 !important;
   font-weight: 500;
   font-size: 24px;
   .lijevidio {
-    padding: 600px 0px 0px 20px;
+    padding: 600px 10px 0px 20px;
+    @media screen and (max-width: 991px) {
+      padding-top: 200px;
+    }
     i {
-      font-size: 50px !important;
+      font-size: 44px !important;
     }
   }
   .desnidio {
-    padding: 100px 0px 0px 90px !important;
+    padding: 100px 10px 0px 30px !important;
     i {
-      font-size: 50px !important;
+      font-size: 50px;
     }
     a {
-      font-size: 50px;
       text-align: center;
     }
   }
@@ -27,7 +41,13 @@
     color: white;
   }
   i {
-    font-size: 40px;
     margin-right: 20px;
+  }
+}
+
+.povratak {
+  padding-top: 330px;
+  @media screen and (max-width: 991px) {
+    padding: 100px 30px 0 0;
   }
 }
