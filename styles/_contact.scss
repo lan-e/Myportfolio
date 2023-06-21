@@ -16,14 +16,10 @@
 }
 .contact {
   width: 100%;
-  // color: #999 !important;
   font-weight: 500;
   font-size: 24px;
   .lijevidio {
     padding: 600px 10px 0px 20px;
-    @media screen and (max-width: 991px) {
-      padding-top: 200px;
-    }
     i {
       font-size: 44px !important;
     }
@@ -44,10 +40,6 @@
     margin-right: 20px;
   }
 }
-
 .povratak {
   padding-top: 330px;
-  @media screen and (max-width: 991px) {
-    padding: 100px 30px 0 0;
-  }
 }
