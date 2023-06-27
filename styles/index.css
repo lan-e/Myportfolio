@@ -505,6 +505,10 @@ b {
   color: #0fb1a2;
 }
 
+a.blueWrap {
+  color: #0fb1a2;
+}
+
 #show-btn {
   margin-bottom: 40px;
 }
