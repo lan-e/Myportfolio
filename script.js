@@ -73,6 +73,10 @@ window.addEventListener("scroll", () => {
     homeNav.classList.remove("navbar-scrolled");
   }
 });
+const body = document.querySelector("body");
+if (window.innerWidth <= 767) {
+  homeNav.classList.add("navbar-scrolled");
+}
 //navbar on hover change color
 function mouseOver() {
   homeNav.classList.add("mouseover");

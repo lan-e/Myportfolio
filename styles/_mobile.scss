@@ -17,7 +17,7 @@
     height: 70%;
   }
   .pozadina {
-    display: none;
+    height: 100%;
   }
   .homeText {
     height: 120vh;
@@ -63,5 +63,11 @@
   }
   .subtitle {
     font-size: 1.2rem;
+  }
+  .contact-img-container {
+    height: 500px;
+  }
+  .upLoader {
+    margin-bottom: 70px;
   }
 }
