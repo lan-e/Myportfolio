@@ -178,7 +178,7 @@
   }
 }
 .contact-img-container {
-  height: 1000px;
+  height: 900px;
   width: 100%;
   background-image: url("../img/banner.png");
   background-size: cover;
@@ -513,7 +513,7 @@
     font-size: 35px;
   }
   .contact .desnidio .povratak {
-    padding: 100px 30px 0 0;
+    padding: 0 30px 0 0;
   }
   .mtMainTitle {
     margin-top: 48px;
