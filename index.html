@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <!-- Slide Home -->
-    <div class="slide home d-flex flex-column position-relative" id="pocetna">
+    <!-- Home -->
+    <div class="home d-flex flex-column position-relative" id="pocetna">
         <img src="img/banner.png" class="position-absolute pozadina">
         <div class="position-absolute home">
             <div class="container">
@@ -28,7 +28,7 @@
                                 <a href="#projekti" class="dropbtn">Projekti<i class="fa fa-caret-down"></i></a>
                                 <div class="dropdown-content">
                                     <a href="#programiranje">Programiranje</a>
-                                    <a href="#web">Web dizajn</a>
+                                    <a href="#web">Web i app dizajn</a>
                                     <a href="#graficki">Grafički dizajn</a>
                                     <a href="#fotografija">Fotografija</a>
                                 </div>
@@ -40,52 +40,26 @@
                     </div>
                 </div>
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="d-flex">
-                            <a href="#programiranje">
-                                <div class="p-5 gumb">PROGRAMIRANJE I WEB DIZAJN</div>
-                            </a>
-                        </div>
-                        <div class="d-flex">
-                            <a href="#graficki">
-                                <div class="p-4 gumb">
-                                    GRAFIČKI DIZAJN
-                                </div>
-                            </a>
-                            <a href="#fotografija">
-                                <div class="p-3 gumb">FOTOGRAFIJA</div>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col intro">
-                        <h1>
-                            <b>Ja sam Nela,<br /> Frontend Developer</b>
-                            <a href="#omeni">
-                                <div class="eyesloader"></div>
-                            </a>
-                        </h1>
-                    </div>
+            <div class="container d-flex flex-column homeText">
+                <h1 class="typewrite">Pozdrav! Ja sam Nela.</h1>
+                <p class="subtitle">Upoznajte me kroz moje radove</p>
+                <div class="loaderDown">
+                    <a href="#programiranje">
+                        <div class="downLoader"></div>
+                    </a>
                 </div>
-            </div>
-            <div class="d-flex justify-content-center loaderDown">
-                <a href="#programiranje">
-                    <div class="downLoader"></div>
-                </a>
             </div>
         </div>
     </div>
-    <!-- Slide moji-radovi (Projekti) -->
-    <div class="slide moji-radovi d-flex flex-column" id="projekti">
+    <!--Projekti -->
+    <div class="moji-radovi d-flex flex-column" id="projekti">
         <div class="container mt-auto mb-auto">
             <div class="row">
                 <div class="col content">
                     <div class="row">
                         <div id="programiranje">
-                            <br /><br /><br /><br />
-                            <div class="d-flex align-items-center">
-                                <h2>Programiranje</h2>
+                            <div class="d-flex align-items-center mtMainTitle">
+                                <h2>Web programiranje</h2>
                                 <div class="bracketsloader"></div>
                             </div>
                         </div>
@@ -103,12 +77,12 @@
                         <div class="col-lg-6 grid-v-space grafOverlay">
                             <img src="img/sofa.jpg" alt="" />
                             <div class="overlay web">
-                                <a href="https://minisofa-nela.vercel.app/" target="_blank">
-                                    <h5>Mini Sofascore Aplikacija</h5>
+                                <a href="https://minisofanela.vercel.app/" target="_blank">
+                                    <h5>Mini Sofascore aplikacija</h5>
                                 </a>
                                 Izrada web aplikacije pomoću Sofascore Academy API. Prikaz utakmica po sportovima,
                                 promjena teme i jezika u postavkama. Korišteni alati: React.js, Next.js, Typescript,
-                                Zeplin.
+                                Zeplin. API više nije aktivan pa nije moguće vidjeti podatke.
                                 <b>2023.</b>
                             </div>
                         </div>
@@ -169,22 +143,45 @@
                             </div>
                         </div>
                         <div class="col-lg-6 grid-v-space grafOverlay">
-                            <img src="img/portfolio.jpg" alt="" />
+                            <img src="img/weatherCast.png" alt="" />
                             <div class="overlay web">
-                                <a href="https://lan-e.netlify.app/" target="_blank">
-                                    <h5>Stari portfolio</h5>
+                                <a href="https://final-weathercast.vercel.app/" target="_blank">
+                                    <h5>WeatherCast aplikacija(web verzija)</h5>
                                 </a>
-                                Portfolio izrađen za vlastite potrebe. Rađeno po tutorialu uz preinake. Poslužilo za
-                                učenje Reacta i prikaz tadašnjih radova.
-                                <b>2022.</b>
+                                Izrada React Native aplikacije za vremensku prognozu. Dostupna i u web
+                                verziji. Korišteni alati: React Native, Expo, OpenWeather API.
+                                <b>2023.</b>
                             </div>
                         </div>
                     </div>
                     <hr>
-                    <div class="row mt-4">
+                    <div class="row mtMainTitle">
+                        <h2>Mobilne aplikacije</h2>
+                        <div class="col-md-6 col-lg-3 grid-v-space grafOverlay">
+                            <img src="img/reactnative.jpg" alt="" loading="lazy" class="img-fluid" />
+                            <div class="overlay">
+                                <a href="https://expo.dev/@lan-e/weather-cast?serviceType=classic&distribution"
+                                    target="_blank">
+                                    <h5>WeatherCast</h5>
+                                </a>
+                                Izrada React Native aplikacije za vremensku prognozu. Korišteni alati: React Native,
+                                Expo, OpenWeather API.
+                                <b>2023.</b>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-3 grid-v-space grafOverlay">
+                            <img src="img/chonchanative.jpg" alt="" loading="lazy" class="img-fluid" />
+                            <div class="overlay">
+                                <h5>Choncha</h5>
+                                React Native aplikacija za pametnu teglu.
+                                <b>2023.</b>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
                         <div id="web">
-                            <br /><br /><br /><br />
-                            <h2>Web dizajn</h2>
+                            <h2 class="mtMainTitle">Web i app dizajn</h2>
                         </div>
                         <div class="col-lg-6 grid-v-space grafOverlay">
                             <img src="img/dontwaste.jpg" alt="" />
@@ -233,10 +230,9 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="row mt-4">
+                    <div class="row">
                         <div id="graficki">
-                            <br /><br /><br /><br />
-                            <h2>Grafički dizajn</h2>
+                            <h2 class="mtMainTitle">Grafički dizajn</h2>
                         </div>
                         <div class="col-md-6 col-lg-4 grid-v-space grafOverlay">
                             <img src="img/jazz.jpg" alt="" loading="lazy" class="img-fluid" />
@@ -332,10 +328,9 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="row mt-4">
+                    <div class="row">
                         <div id="fotografija">
-                            <br /><br /><br /><br />
-                            <h2>Fotografija</h2>
+                            <h2 class="mtMainTitle">Fotografija</h2>
                         </div>
                         <div class="col-md-12 col-lg-4 grid-v-space grafOverlay">
                             <img src="/img/casopis.png" />
@@ -375,7 +370,7 @@
         </div>
     </div>
     <!-- Hamburger -->
-    <div class="slide hamburgerNav d-flex flex-column">
+    <div class="hamburgerNav d-flex flex-column">
         <div class="container">
             <div class="row">
                 <div class="col d-flex justify-content-end align-items-center">
@@ -398,29 +393,28 @@
             </div>
         </div>
     </div>
-    <!-- Slide O meni -->
-    <div class="slide o-meni d-flex flex-column">
+    <!-- O meni -->
+    <div class="o-meni d-flex flex-column">
         <div class="container mt-auto mb-auto">
             <div class="row">
                 <div class="col content">
                     <div class="row">
                         <div id="omeni"></div>
                         <div class="col col-lg-6">
-                            <h1>O meni</h1><br />
-                            <h4>Obrazovanje</h4>
+                            <h1>O meni</h1>
+                            <h4 class="mtTitle">Obrazovanje</h4>
                             Završila sam prirodoslovno-matematičku gimnaziju. Studentica sam Sveučilišta Sjever, smjer
                             Multimedija, oblikovanje i primjena. Ovaj sam smjer upisala zbog ljubavi prema glazbi i
                             videoigrama, a najviše zbog prijašnjeg sudjelovanja u fotogrupi koja mi je omogućila dvije
                             fotografske izložbe. No ipak, zainteresiralo me frontend programiranje u kojem vidim
                             budućnost.
-                            <br /><br />
-                            <h4>Znanje</h4>
-                            Radila sam s alatima: <span class="blueWrap">HTML, CSS, SCSS, JS, jQuery, React.js, Next.js,
+                            <h4 class="mtTitle">Znanje</h4>
+                            Radila sam s alatima: <span class="blueWrap">HTML, CSS, SCSS, JS, jQuery, React.js, React
+                                Native, Next.js,
                                 Git, Figma, Bootstrap</span>. Osim toga površno sam koristila <span
-                                class="blueWrap">Typescript, React Native, Zeplin, Sanity, Stripe, </span>te <span
+                                class="blueWrap">Typescript, Zeplin, Sanity, Stripe </span>te <span
                                 class="blueWrap">Netlify i Vercel</span> za deployanje svojih projekata.
-                            <br /><br />
-                            <h4>Iskustvo</h4>
+                            <h4 class="mtTitle">Iskustvo</h4>
                             Tokom studiranja imala sam priliku odrađivati stručnu praksu. Odrađivala sam je u dvije
                             tvrtke gdje sam stekla napredno poznavanje frontenda. Koristila sam React.js, Next.js,
                             Bootstrap. U tvrtci <a class="blueWrap" href="https://prolink.hr"
@@ -435,10 +429,10 @@
                             se temi React Native i izradi mobilne aplikacije. To znanje primjenjujem i za izradu mobilne
                             aplikacije u timu
                             <a class="blueWrap" href="https://choncha.eu" target="_blank">Choncha</a>.
-                            <br /><br />
-                            <button onclick="showMore()" id="show-btn" class="btnSmall">...prikaži više</button>
+                            <div><button onclick="showMore()" id="show-btn" class="btnSmall mtTitle">...prikaži
+                                    više</button></div>
                             <div id="show-hide">
-                                <div class="d-flex align-items-center">
+                                <div class="d-flex align-items-center mtTitle">
                                     <h4>Ostalo iskustvo i projekti</h4>
                                     <div class="coffee-loader"></div>
                                 </div>
@@ -449,18 +443,19 @@
                                 košnica", podcast "Priče iz šupe", videoreklamu za energetske
                                 bombone "Redill" te 3D animaciju "The Hobbit". Rekreirala sam scenu iz poznatog filma
                                 “Whiplash”.
-                                <br />
-                                <a href="img/kava.jpg" data-lightbox="izlozbe">
-                                    <span class="blueWrap">Fotografske izložbe:</span>
-                                </a>
-                                <a href="img/voce.jpg" data-lightbox="izlozbe"></a><a href="img/hnd.jpg"
-                                    data-lightbox="izlozbe"></a> „Začini život“ i „Voće 2.0“.
-                                Fotografija kave bila je
-                                prodana već drugi dan. Iz izložbe voća bile su odabrane pojedine
-                                fotografije i postavljene u Novinarski dom u Zagrebu povodom
-                                Nestle panela „Zdravija djeca u zdravijoj Hrvatskoj“.
-                                <br /><br />
-                                <h4>Osobine</h4>
+                                <div>
+                                    <a href="img/kava.jpg" data-lightbox="izlozbe">
+                                        <span class="blueWrap">Fotografske izložbe:</span>
+                                    </a>
+
+                                    <a href="img/voce.jpg" data-lightbox="izlozbe"></a><a href="img/hnd.jpg"
+                                        data-lightbox="izlozbe"></a> „Začini život“ i „Voće 2.0“.
+                                    Fotografija kave bila je
+                                    prodana već drugi dan. Iz izložbe voća bile su odabrane pojedine
+                                    fotografije i postavljene u Novinarski dom u Zagrebu povodom
+                                    Nestle panela „Zdravija djeca u zdravijoj Hrvatskoj“.
+                                </div>
+                                <h4 class="mtTitle">Osobine</h4>
                                 <ul>
                                     <li>tip osobnosti: <a class="blueWrap"
                                             href="https://www.16personalities.com/isfj-personality"
@@ -471,7 +466,6 @@
                                         timski rad, svestranost
                                     </li>
                                 </ul>
-                                <br />
                             </div>
                             <button onclick="showLess()" id="hide-btn" class="btnSmall Red">...prikaži manje</button>
                         </div>
@@ -483,10 +477,10 @@
             </div>
         </div>
     </div>
-    <!-- Slide Kontakt -->
+    <!-- Kontakt -->
     <div class="position-relative">
         <div class="position-absolute contact-img-container"></div>
-        <div class="slide contact d-flex flex-column position-absolute">
+        <div class="contact d-flex flex-column position-absolute">
             <div class="container mb-auto " id="kontakt">
                 <div class="row">
                     <div class="col content">
@@ -505,14 +499,14 @@
                                         <i class="fab fa-linkedin"></i></a><span>Nela Đuranec</span>
                                 </div>
                             </div>
-                            <div class="col-lg-6 mt-4 mt-lg-0 desnidio">
+                            <div class="col-lg-6 desnidio">
                                 <div class="row">
                                     <div class="col ">
-                                        O MENI<br />
+                                        <div>O MENI</div>
                                         Studentica sam multimedije. Zanima me frontend development.
                                         Imala sam priliku sudjelovati u Sofascore Frontend Akademiji te odrađivati
                                         praksu kao frontend developer. Tehnologije s kojima sam se susrela: HTML, CSS,
-                                        JS, Typescript, Bootstrap, React.js, Next.js.
+                                        JS, Typescript, Bootstrap, React.js, Next.js, React Native, Figma.
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -540,9 +534,6 @@
     <script src="alati/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="alati/lightbox/js/lightbox-plus-jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
-    <!-- 3D Model Viewer  -->
-    <!-- Referenca: https://modelviewer.dev/ -->
-    <!--<script type="module" src="alati/model-viewer/model-viewer.min.js"></script> -->
     <script src="script.js"></script>
 </body>
 

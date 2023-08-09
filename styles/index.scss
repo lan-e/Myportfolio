@@ -1,9 +1,10 @@
 @import "loaders";
 @import "contact";
 @import "home";
-@import "mobile";
 @import "nav";
 @import "overlay";
+@import "typewriter";
+@import "mobile";
 html,
 body {
   background-color: black;
@@ -48,10 +49,6 @@ b {
   font-size: 36px;
   cursor: pointer;
   padding: 15px 45px 10px 10px;
-}
-.slide {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 #omeni {
   padding-top: 140px;

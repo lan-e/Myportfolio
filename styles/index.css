@@ -232,9 +232,14 @@
 }
 
 .home {
-  padding-top: 35vh;
   height: 100%;
   width: 100%;
+}
+
+.homeText {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .gumb {
@@ -255,61 +260,9 @@
 }
 
 .loaderDown {
-  padding-top: 25vh;
+  padding-top: 40vh;
 }
 
-@media only screen and (max-width: 767px) {
-  html,
-  body {
-    overflow-x: hidden !important;
-  }
-  #navbar {
-    height: 60px;
-  }
-  #navbar img {
-    height: 50px;
-    width: 50px;
-  }
-  #navbar .fa-bars {
-    font-size: 30px;
-  }
-  .overlay {
-    font-size: 16px;
-  }
-  .web {
-    font-size: 11px !important;
-  }
-  .web h5 {
-    font-size: 13px;
-  }
-  .intro {
-    font-size: 2rem;
-    margin-left: 20px;
-  }
-  .gumb {
-    font-size: 1rem;
-  }
-  .contact {
-    padding-left: 40px;
-    font-size: 16px;
-  }
-  .contact .lijevidio {
-    padding: 100px 10px 0px 10px !important;
-  }
-  .contact .lijevidio i {
-    font-size: 30px !important;
-  }
-  .contact .desnidio {
-    padding: 80px 15px 0px 15px !important;
-  }
-  .contact .desnidio i {
-    padding-left: 15px;
-    font-size: 35px !important;
-  }
-  .contact .desnidio .povratak {
-    padding: 100px 30px 0 0;
-  }
-}
 .hamburgerNav {
   z-index: 1;
   top: 0;
@@ -431,6 +384,144 @@
   opacity: 1;
 }
 
+.mtMainTitle {
+  margin-top: 120px;
+}
+
+.mtTitle {
+  margin-top: 24px;
+}
+
+:root {
+  --bg-color: rgb(2, 2, 2);
+  --typewriterSpeed: 2s;
+  --typewriterCharacters: 21;
+}
+
+.typewrite {
+  font-size: clamp(1rem, 3vw + 1rem, 4rem);
+  position: relative;
+  font-family: "Source Code Pro", monospace;
+  position: relative;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.subtitle {
+  color: #fff;
+  font-family: "Source Code Pro", monospace;
+  font-size: 2rem;
+  font-weight: 400;
+  opacity: 0;
+  transform: translateY(3rem);
+  animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 1s) forwards;
+  text-align: center;
+}
+
+.typewrite::before,
+.typewrite::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.typewrite::before {
+  background: var(--bg-color);
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards;
+}
+
+.typewrite::after {
+  width: 0.125em;
+  background: white;
+  animation: typewriter var(--typewriterSpeed) steps(var(--typewriterCharacters)) 1s forwards, blink 750ms steps(var(--typewriterCharacters)) infinite;
+}
+
+@keyframes typewriter {
+  to {
+    left: 100%;
+  }
+}
+@keyframes blink {
+  to {
+    background: transparent;
+  }
+}
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media only screen and (max-width: 767px) {
+  html,
+  body {
+    overflow-x: hidden !important;
+  }
+  #navbar {
+    height: 60px;
+  }
+  #navbar img {
+    height: 50px;
+    width: 50px;
+  }
+  #navbar .fa-bars {
+    font-size: 30px;
+  }
+  .home {
+    height: 70%;
+  }
+  .pozadina {
+    display: none;
+  }
+  .homeText {
+    height: 120vh;
+  }
+  .overlay {
+    font-size: 16px;
+  }
+  .web {
+    font-size: 11px !important;
+  }
+  .web h5 {
+    font-size: 13px;
+  }
+  .intro {
+    font-size: 2rem;
+    margin-left: 20px;
+  }
+  .gumb {
+    font-size: 1rem;
+  }
+  .contact {
+    padding-left: 40px;
+    font-size: 16px;
+  }
+  .contact .lijevidio {
+    padding: 100px 10px 0px 10px !important;
+  }
+  .contact .lijevidio i {
+    font-size: 30px !important;
+  }
+  .contact .desnidio {
+    padding: 80px 15px 0px 15px !important;
+  }
+  .contact .desnidio i {
+    padding-left: 15px;
+    font-size: 35px;
+  }
+  .contact .desnidio .povratak {
+    padding: 100px 30px 0 0;
+  }
+  .mtMainTitle {
+    margin-top: 48px;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+}
 html,
 body {
   background-color: black;
@@ -485,11 +576,6 @@ b {
   font-size: 36px;
   cursor: pointer;
   padding: 15px 45px 10px 10px;
-}
-
-.slide {
-  padding-top: 2rem;
-  padding-bottom: 2rem;
 }
 
 #omeni {
