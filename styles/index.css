@@ -200,7 +200,7 @@
   font-size: 44px !important;
 }
 .contact .desnidio {
-  padding: 100px 10px 0px 30px !important;
+  padding: 150px 10px 0px 30px !important;
 }
 .contact .desnidio i {
   font-size: 50px;
@@ -563,13 +563,9 @@ b {
 }
 
 .fa-solid:hover,
-.fa-linkedin:hover {
+.fa-linkedin:hover,
+.fa-github:hover {
   color: #0fb1a2;
-}
-
-.fa-github:hover,
-.fa-youtube:hover {
-  color: #c22f39;
 }
 
 .fa-bars {
