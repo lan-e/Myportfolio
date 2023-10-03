@@ -217,6 +217,8 @@
 
 .povratak {
   padding-top: 330px;
+  margin-top: 20px;
+  margin-bottom: 70px;
 }
 
 .intro {
@@ -495,9 +497,22 @@
   .gumb {
     font-size: 1rem;
   }
+  .mtMainTitle {
+    margin-top: 48px;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  .contact {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .contact-img-container {
+    height: 500px;
+  }
   .contact {
     padding-left: 40px;
-    font-size: 16px;
   }
   .contact .lijevidio {
     padding: 100px 10px 0px 10px !important;
@@ -514,18 +529,6 @@
   }
   .contact .desnidio .povratak {
     padding: 0 30px 0 0;
-  }
-  .mtMainTitle {
-    margin-top: 48px;
-  }
-  .subtitle {
-    font-size: 1.2rem;
-  }
-  .contact-img-container {
-    height: 500px;
-  }
-  .upLoader {
-    margin-bottom: 70px;
   }
 }
 html,
