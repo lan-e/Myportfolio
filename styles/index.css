@@ -190,16 +190,26 @@
 
 .contact {
   width: 100%;
-  font-weight: 500;
   font-size: 24px;
 }
 .contact .lijevidio {
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   padding: 600px 10px 0px 20px;
 }
+.contact .lijevidio a:hover span,
+.contact .lijevidio a:hover i {
+  color: #0fb1a2;
+}
 .contact .lijevidio i {
+  text-align: center;
   font-size: 44px !important;
+  width: 50px;
 }
 .contact .desnidio {
+  text-align: justify;
   padding: 150px 10px 0px 30px !important;
 }
 .contact .desnidio i {
@@ -213,6 +223,10 @@
 }
 .contact i {
   margin-right: 20px;
+}
+.contact .align-items-center a {
+  display: flex;
+  align-items: center;
 }
 
 .povratak {
@@ -317,10 +331,6 @@
   background-color: #222;
 }
 
-.dropbtn {
-  padding: 100px 40px 100px 40px;
-}
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -347,6 +357,14 @@
   background-color: #222;
 }
 
+.dropbtn {
+  display: flex;
+}
+.dropbtn .fa-caret-down {
+  margin-top: 2px;
+  margin-left: 8px;
+}
+
 .grafOverlay {
   position: relative;
 }
@@ -357,6 +375,7 @@
 }
 .grafOverlay a:hover {
   color: #c22f39 !important;
+  transition: 0.2s all ease;
   font-weight: 500;
 }
 
@@ -588,16 +607,24 @@ b {
 }
 
 .o-meni {
-  margin-bottom: 150px;
+  min-height: 1920px;
   color: white;
 }
 
 .blueWrap {
   color: #0fb1a2;
 }
+.blueWrap:hover {
+  color: #32d6c6;
+  transition: 0.2s all ease;
+}
 
 a.blueWrap {
   color: #0fb1a2;
+}
+a.blueWrap:hover {
+  color: #32d6c6;
+  transition: 0.2s all ease;
 }
 
 #show-btn {
@@ -618,20 +645,24 @@ a.blueWrap {
 }
 
 .btnSmall {
-  background-color: #0fb1a2;
+  background: transparent;
   box-shadow: 5px 2px 8px #333;
   font-size: 18px;
+  text-transform: uppercase;
   color: white;
   border: 0;
   border-radius: 10px;
   height: 50px;
-}
-.btnSmall.Red {
-  background-color: #c22f39;
+  padding: 12px 64px;
 }
 .btnSmall.Red:hover {
   background: #c22f39;
   background: linear-gradient(56deg, #e2444f 0%, #c22f39 67%);
+}
+
+.gumbFlex {
+  display: flex;
+  justify-content: center;
 }
 
 hr {

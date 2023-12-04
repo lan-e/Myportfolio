@@ -16,15 +16,27 @@
 }
 .contact {
   width: 100%;
-  font-weight: 500;
   font-size: 24px;
   .lijevidio {
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding: 600px 10px 0px 20px;
+    a:hover {
+      span,
+      i {
+        color: #0fb1a2;
+      }
+    }
     i {
+      text-align: center;
       font-size: 44px !important;
+      width: 50px;
     }
   }
   .desnidio {
+    text-align: justify;
     padding: 150px 10px 0px 30px !important;
     i {
       font-size: 50px;
@@ -38,6 +50,11 @@
   }
   i {
     margin-right: 20px;
+  }
+
+  .align-items-center a {
+    display: flex;
+    align-items: center;
   }
 }
 .povratak {

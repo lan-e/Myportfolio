@@ -25,7 +25,9 @@
                         <a href="#pocetna"><img src="img/myicon.png" width="60px" /></a>
                         <div class="d-none d-lg-block">
                             <div class="dropdown">
-                                <a href="#projekti" class="dropbtn">Projekti<i class="fa fa-caret-down"></i></a>
+                                <a href="#projekti" class="dropbtn me-5">
+                                    <div>Projekti</div><i class="fa fa-caret-down"></i>
+                                </a>
                                 <div class="dropdown-content">
                                     <a href="#programiranje">Programiranje</a>
                                     <a href="#web">Web i app dizajn</a>
@@ -338,11 +340,12 @@
                 <div class="col content">
                     <div class="row">
                         <div id="omeni"></div>
+                        <h1>O meni</h1>
                         <div class="col col-lg-6">
-                            <h1>O meni</h1>
                             <h4 class="mtTitle">Obrazovanje</h4>
                             Završila sam prirodoslovno-matematičku gimnaziju. Studentica sam Sveučilišta Sjever gdje sam
-                            stekla titulu <span class="blueWrap">bacc. ing. techn. graph.</span> - prvostupnica
+                            stekla titulu <a href="https://zir.nsk.hr/islandora/object/unin%3A6215" target="_blank"
+                                class="blueWrap">bacc. ing. techn. graph.</a> - prvostupnica
                             inženjerka multimedijske i grafičke tehnologije. Svoje obrazovanje nastavljam na diplomskom
                             studiju Multimedija. Ovaj sam smjer upisala zbog ljubavi prema glazbi i
                             videoigrama, a najviše zbog prijašnjeg sudjelovanja u fotogrupi koja mi je omogućila dvije
@@ -352,11 +355,9 @@
                                 href="https://api.sofascore.com/api/v1/asset/sofascore-academy/50ba14abcbeb5d3419c9f90884c1d7ce"
                                 target="_blank"><b>Sofascore Academy Frontend Course</b></a>
                             <h4 class="mtTitle">Znanje</h4>
-                            Imam iskustva u: <span class="blueWrap">HTML, CSS, SCSS, JS, jQuery, React.js, React
-                                Native, Next.js,
-                                Git, Figma, Bootstrap</span>. Osim toga površno sam koristila <span
-                                class="blueWrap">TypeScript, Sanity, Stripe </span>te <span class="blueWrap">Netlify i
-                                Vercel</span> za deployanje svojih projekata.
+                            Imam iskustva u: HTML, CSS, SCSS, JS, jQuery, React.js, React
+                            Native, Next.js, Git, Figma, Bootstrap. Osim toga površno sam koristila TypeScript, Sanity,
+                            Stripe te Netlify i Vercel za deployanje svojih projekata.
                             <h4 class="mtTitle">Iskustvo</h4>
                             Tokom studiranja imala sam priliku odrađivati stručnu praksu. Odrađivala sam je u dvije
                             tvrtke gdje sam stekla napredno poznavanje frontenda. Koristila sam React.js, Next.js,
@@ -371,8 +372,9 @@
                             Academy API, Next.js i TypeScript. U završnom radu posvetila sam se temi izrade React Native
                             aplikacija. To znanje primjenjujem i za izradu mobilne aplikacije u timu
                             <a class="blueWrap" href="https://choncha.eu" target="_blank">Choncha</a>.
-                            <div><button onclick="showMore()" id="show-btn" class="btnSmall mtTitle">...prikaži
-                                    više</button></div>
+                            <div class="gumbFlex">
+                                <button onclick="showMore()" id="show-btn" class="btnSmall mtTitle">dodatno</button>
+                            </div>
                             <div id="show-hide">
                                 <div class="d-flex align-items-center mtTitle">
                                     <h4>Ostalo iskustvo i projekti</h4>
@@ -404,9 +406,10 @@
                                     </li>
                                 </ul>
                             </div>
-                            <button onclick="showLess()" id="hide-btn" class="btnSmall Red">...prikaži manje</button>
+                            <div class="gumbFlex"><button onclick="showLess()" id="hide-btn"
+                                    class="btnSmall Red">sakrij</button></div>
                         </div>
-                        <div class="col-12 col-md-12 col-lg-6">
+                        <div class="col-12 col-md-12 col-lg-6" style="margin-top: 24px;">
                             <img src="/img/janormal.jpg" width="80%" style="display: block; margin: auto" />
                         </div>
                     </div>
@@ -425,28 +428,28 @@
                             <div class="col-lg-6 lijevidio">
                                 <div class="d-flex align-items-center">
                                     <a href="tel:097/723-8354">
-                                        <i class="fa-solid fa-phone"></i></a><span>097/723-8354</span>
+                                        <i class="fa-solid fa-phone"></i><span>097/723-8354</span></a>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <a href="mailto:neladuranec@gmail.com" target="_blank"><i
-                                            class="fa-solid fa-envelope"></i></a> <span>neladuranec@gmail.com</span>
+                                            class="fa-solid fa-envelope"></i><span>neladuranec@gmail.com</span></a>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <a href="https://www.linkedin.com/in/nela-duranec/" target="_blank">
-                                        <i class="fab fa-linkedin"></i></a><span>Nela Đuranec</span>
+                                        <i class="fab fa-linkedin"></i><span>Nela Đuranec</span></a>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <a href="https://github.com/lan-e" target="_blank"><i
-                                            class="fab fa-github"></i></a><span>lan-e</span>
+                                            class="fab fa-github"></i><span>lan-e</span></a>
                                 </div>
                             </div>
                             <div class="col-lg-6 desnidio">
                                 <div class="row">
                                     <div class="col ">
-                                        <div>O MENI</div>
-                                        Studentica sam Sveučilišta Sjever gdje sam stekla titulu <span
-                                            class="blueWrap">bacc. ing. techn. graph.</span> Svoje obrazovanje
-                                        nastavljam na diplomskom studiju Multimedija. Zanima me frontend development.
+                                        <h4>O MENI</h4>
+                                        Studentica sam Sveučilišta Sjever gdje sam stekla titulu bacc. ing. techn.
+                                        graph. Svoje obrazovanje nastavljam na diplomskom studiju Multimedija. Zanima me
+                                        frontend development.
                                         Imala sam priliku sudjelovati u Sofascore Frontend Akademiji te odrađivati
                                         praksu kao frontend developer. Neke od tehnologija s kojima sam radila: HTML,
                                         CSS, JS, TS, React.js, Next.js, React Native, Figma.
